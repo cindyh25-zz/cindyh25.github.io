@@ -108,7 +108,7 @@ a.hover:hover{
   text-transform:uppercase;
 }
 .gray{
-  color:#b5b5b5;
+  color:#959595;
 }
 .fleft{
   float:left;
@@ -315,6 +315,10 @@ h6{
     float: left;
     width: 90%;
   }
+  .about img{
+    margin:auto auto 2em auto;
+    float: none;
+  }
   .textoverlay{
     font-size: 20px;
   }
@@ -325,5 +329,12 @@ h6{
   .gallery{width: 100%; margin-bottom: 2em;}
   
   .about img{width:50%; margin-left: auto; margin-right: auto; float:none; margin-bottom: 2em;}
+}
+
+@media only screen and (max-width:650px){
+  .nav{
+    font-size: 0.6em;
+  }
+
 }
 
