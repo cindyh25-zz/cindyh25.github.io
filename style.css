@@ -102,14 +102,12 @@ a.hover:hover{
 }
 
 .bio{
-  position:relative;
-  float:left; 
   text-align:left; 
   width:50%;
 }
 
 .about{
-  width: 75%; 
+  width: 65%; 
   margin-top: 50px;
 }
 .about img{
@@ -127,7 +125,10 @@ a.hover:hover{
   text-transform:uppercase;
 }
 .gray{
-  color:#b5b5b5;
+  color:#959595;
+}
+.blue{
+  color: #cae9fd;
 }
 .fleft{
   float:left;
