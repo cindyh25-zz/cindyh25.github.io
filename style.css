@@ -19,13 +19,14 @@ a.nav{
   color: #b5b5b5;
   float:right;
   text-decoration: none;
-  padding-left: 40px;
+  margin-left: 40px;
   text-transform: uppercase;
   font-size: 12px;
+  font-weight: 500;
 }
 a.hover:hover{ 
   color: black;
-  transition: 0.6s ease-in-out;
+  transition: 0.35s ease-in-out;
 }
 
 #logo{
@@ -49,45 +50,6 @@ a.hover:hover{
   background-color: #fff;
   text-align: left;
 }
-
-/* .row {
-  position: relative;
-  display: inline-block;
-  width: 70%;
-  padding: 2em;
-  margin: 1.5em;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 1px 2px #e1e6e8;
-  border-radius: 5px;
-  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.row::after {
-  content: "";
-  border-radius: 8px;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0 0px 25px #e1e6e8;
-  opacity: 0;
-  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.row:hover {
-  -webkit-transform: scale(1.05, 1.05);
-  transform: scale(1.03, 1.03);
-  }
-
-.row:hover::after {
-  opacity: 1;
-}
- */
 
 .project-desc{
   text-align:left;
@@ -246,7 +208,7 @@ a svg rect{
 a svg rect{
   stroke-width: 3px;
   stroke: #000000;
-  transition: 0.5s ease-in-out;
+  transition: 0.35s ease-in-out;
   stroke-dasharray: 44, 136;
   stroke-dashoffset: 22;
 }
@@ -255,44 +217,25 @@ a svg rect{
   stroke-dashoffset: 22;
 }
 
-/*
-.container {
-  position: relative;
+/* blue underline */
+.chunky-underline{
+  background-image: linear-gradient(transparent 0%, transparent 65%, #cae9fd 65%, #cae9fd 100%, transparent 100%, transparent);
+  display: inline-block;
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: .35s background-size ease-in-out;
 }
-.container:hover .overlay{
-  opacity: 0.7;
-}
-.container:hover .textoverlay{
-  opacity:1;
+.active {
+  background-size: 100%;
 }
 
-.overlay{
-  position: absolute; 
-  top: 0; 
-  height:100%;
-  background-color: white;
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
+.chunky-underline:after {
+  content: '';
+  display: block;
 }
-.textoverlay {
-  color: black;
-  opacity:0;
-  font-size: 30px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 90%;
-  height: auto;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  transition: .5s ease;
-}*/
+.chunky-underline:hover {
+  background-size: 100% 100%;
+}
 
 /*art gallery*/
 .artgal{
