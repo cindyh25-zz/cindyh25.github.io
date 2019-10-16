@@ -1,7 +1,7 @@
 /* CSS files add styling rules to your content */
 
 body {
-  font-family: "Segoe UI", "Helvetica Neue", "Arial", helvetica, arial, sans-serif;
+  font-family: "Segoe UI", "Helvetica", "Arial", helvetica, arial, sans-serif;
 }
 html{
   scroll-behavior:smooth;
