@@ -38,8 +38,7 @@ a.hover:hover{
 .row{
   display: inline-block;
   width: 85%;
-  padding: 1em;
-  margin: 1.5em 0;
+  margin: 2.5em 0;
   background-color: #fff;
 }
 .row2{
@@ -60,7 +59,7 @@ a.hover:hover{
 .gallery{
   width: 50%;
   float:left;
-  margin-right: 4em;
+  margin-right: 3em;
 }
 
 .bio{
