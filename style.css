@@ -26,7 +26,7 @@ a.nav{
 }
 a.hover:hover{ 
   color: black;
-  transition: 0.35s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 #logo{
@@ -205,9 +205,9 @@ a svg rect{
   left:0;
 }
 a svg rect{
-  stroke-width: 3px;
+  stroke-width: 4px;
   stroke: #000000;
-  transition: 0.35s ease-in-out;
+  transition: 0.25s ease-in-out;
   stroke-dasharray: 44, 136;
   stroke-dashoffset: 22;
 }
@@ -222,7 +222,7 @@ a svg rect{
   display: inline-block;
   background-size: 0 100%;
   background-repeat: no-repeat;
-  transition: .35s background-size ease-in-out;
+  transition: .25s background-size ease-in-out;
 }
 .active {
   background-size: 100%;
