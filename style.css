@@ -107,6 +107,7 @@ a.hover:hover{
 }
 .underline{
   text-decoration: underline;
+  text-decoration-color: #b5b5b5;
 }
 .caption{
   margin-top:10px;
@@ -168,10 +169,18 @@ h6{
   margin-bottom: 1em;
 }
 
-.responsive ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-gap: 1rem; 
+.button-center{
+  font-size:12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  margin: 2em auto;
+  padding: .5em 2em;
+  background-color: black;
+  color:white;
+  width: 200px;
+  text-align: center;
+  line-height:36px;
 }
 
 .button{
@@ -249,7 +258,8 @@ a svg rect{
 }
 .column{
   float:left;
-  width:25%;
+  width:20%;
+  margin:1em;
 }
 
 .text{
@@ -274,6 +284,15 @@ a svg rect{
   font-size:20px;
   font-style:italic;
   padding:30px;
+}
+
+@media only screen and (max-width:1260px){
+  .column{
+    float: left;
+    width: 50%;
+    padding: 0 2em;
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width:895px){

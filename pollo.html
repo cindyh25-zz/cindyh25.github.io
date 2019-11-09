@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>cindy huang</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="/assets/favicon.png" type="image/png">
+
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="/style.css">
+
+  <!-- import the webpage's javascript file -->
+  <script src="/script.js" defer></script>
+
+  <!-- font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+</head>
+
+<body>
+  <div class="header">
+    <a href="index.html"><img src="/assets/name.png" id="logo"></a>
+    <a href="/assets/Huang_Cindy.pdf" class="nav hover chunky-underline" target="_blank">resume</a>
+    <a href="about.html" class="nav hover chunky-underline">about</a>
+    <a href="index.html" class="nav hover chunky-underline">projects</a>
+  </div>
+
+  <h1>
+    Pollo is an app that that allows for real-time polling, feedback, and interaction between teachers and students.
+  </h1>
+  <div class="projheader">
+    <div class="column">
+      <h5>Timeline</h5>
+      <div class="small">
+        Fall 2019 - Present
+      </div>
+    </div>
+    <div class="column">
+      <h5>
+        My Role / Skills
+      </h5>
+      <div class="small">
+        Product Designer / Design systems <br> Prototyping <br> Interaction design<br>
+      </div>
+    </div>
+    <div class="column">
+      <h5>Platform</h5>
+      <div class="small">
+        <a href="https://apps.apple.com/us/app/pollo-polling-made-easy/id1355507891" class="underline">iOS </a><br>
+        Android (in progress)<br>
+        Web (in progress)<br>
+      </div>
+    </div>
+    <div class="column">
+      <h5>Team</h5>
+      <div class="small">
+        <a href="https://www.cornellappdev.com/" class="underline">Cornell AppDev</a>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="text">
+    <h6>Motivation ❔</h6>
+    At Cornell, many professors utilize polling software such as iClickers or Learning Catalytics in class.
+    They use this often in large lectures where it is hard to interact with everyone in the class. Some
+    of the main motivations for polling during class are:
+    <ul>
+      <li>Taking attendance</li>
+      <li>Gauging the class’ understanding</li>
+      <li>Engaging students during class</li>
+    </ul>
+
+    <h6>
+      The Problem 🤔
+    </h6>
+    Widely used polling software is <strong>expensive</strong> and/or <strong>bulky.</strong><br>
+    <img src="assets/pollo-problem.png">
+
+    <br><br>
+    This can be a financial burden and an annoyance to carry around or sign up/register for.
+    <div class="emphasis">
+      How might we create a way for professors to easily track and interact with students and for students to
+      participate in classes, for free?
+    </div>
+    As part of <a target="_blank" href="https://www.cornellappdev.com/" class="underline">
+      Cornell AppDev</a>, my contributions as a product designer have been:
+    <ol>
+      <li><a href="#design-system" class="underline">Create a visual design system</a></li>
+      <li><a href="#onboarding" class="underline">Design onboarding flows</a></li>
+      <li><a href="#iteration" class="underline">Iterate on last semester’s user testing feedback</a></li>
+      <li><a href="#web" class="underline">Start designing our web app</a></li>
+    </ol>
+
+    <h2 id="design-system">
+      1. Visual Design System 🎨
+    </h2>
+    <p>
+      The team lacked a consistent UI kit. I did an audit of all of the visual assets in the app, consolidated styles
+      into
+      a visual design system created using Figma, and updated the old designs using this system. <br>
+    </p>
+    <a href="https://www.figma.com/file/C9mZz5wT7GVyOmpVqfPgCi/pollo-system?node-id=128%3A185" target="_blank">
+      <div class="button-center">
+        Check it out on figma
+      </div>
+    </a>
+
+    <img src="assets/pollo-system-cover.png">
+
+    <img src="assets/pollo-system-color.png">
+    <img src="assets/pollo-system-type-ios.png">
+    <img src="assets/pollo-system-type-android.png">
+    <img src="assets/pollo-system-components-ios.png">
+    <img src="assets/pollo-system-components-android.png">
+    <img src="assets/pollo-system-icons.png">
+
+    <p style="margin-top:2em;">
+      This helped us resolve many inconsistencies in our designs/visual hierarchy and organize our files. In the future,
+      we will use Figma components'
+      best practices to design more efficiently and hand off clean and consistent designs to developers!
+    </p>
+
+    <h2 id="onboarding">
+      2. Onboarding 🚢
+    </h2>
+    We wanted to create an onboarding flow for the first time a user makes a poll to make sure they know of all options.
+    Particularly, that
+    <ul>
+      <li>Starting a question without inputting anything will autofill with choices "A", "B", etc.</li>
+      <li>Selecting an option marks it as a correct answer.</li>
+      <li>You can either save the question to poll later (planning lectures in advance) or start polling on the spot.
+      </li>
+    </ul>
+    <h6>
+      Here is the final prototype.
+    </h6>
+    <video width="100%" controls>
+      <source src="assets/onboarding-video.mp4" type="video/mp4"></video>
+    <h6>
+      Here is how I got there.
+    </h6>
+    <p>
+      First, I mapped out different orderings and lengths of the onboarding flow to mimic how a professor would make a
+      poll
+      themselves and make it easy to follow.
+    </p>
+    <img class="pic" src="assets/onboarding-flows.png">
+
+    <p>
+      I decided on <strong>Flow 3</strong> because it was the most comprehensive, highlighting all features without
+      unecessary steps.
+      It also presented the autofill option more as a secondary option to filling out each question. I chose this
+      because prior research showed
+      the primary use case is for professors planning out questions in advance rather than on the spot. The autofill is
+      still important if professors
+      poll spontaneously or have questions on the lecture slides that don't fit within our length/format constraints to
+      display on the app.
+    </p>
+    <h6>
+      Visual explorations
+    </h6>
+    <p>
+      I also explored how to visually highlight both the specific parts of the screen (buttons, text fields, etc.) and
+      the text for
+      onboarding instructions. I used a gray overlay and white outlines and text to emphasize components and provide
+      context.
+    </p>
+    <img class="pic" src="assets/onboarding-visual.png">
+    <p>
+      Option A is more dynamic which brings users' attention to the buttons highlighted. But, the copy is less direct
+      and the motion
+      does not leave a good space for a "tap to continue" prompt. <br>
+      Option B makes the text the primary focus with a heavier weight, fixed position, and simple copy. <br><br>
+      I chose <strong>A</strong> based on feedback that the moving instructions provides clearer focus on where to click
+      and
+      how to navigate.<br><br>
+      <i>Further onboarding designs for the first launch of the app are in progress.</i>
+    </p>
+
+    <h2 id="iteration">
+      3. Iterating on user testing 👷🏻‍♀️
+    </h2>
+    <p>
+      These iterations will be a part of our next launch on iOS and Android. <br>
+      <i>Check back in 2020 for all the fun details!</i>
+    </p>
+
+    <h2 id="web">
+      4. Designing Pollo for web 💻
+    </h2>
+    <p>
+      To address professor's desire for more group controls and hesitance to allow phones in class, we are currently
+      working
+      on building a Pollo web app.<br><br>
+      Our main goal for a web platform is to remove the friction with group controls and exporting attendance that
+      professors faced through the smaller
+      mobile interface. This semester, we stripped away many group controls in order to ship a better functioning MVP.
+      For web, these are our initial feature
+      requirements in addition to the functionality of the mobile app.
+      <ul>
+        <li><b>More natural interface to draft lecture questions ahead of time</b></li>
+        <li><b>Seamless navigation between Pollo and exporting attendance as a CSV</b></li>
+        <li><b>Customization and group controls</b>
+          <ul>
+            <li>Control over how to display results (i.e. displaying percentages with vs. without the answer)</li>
+            <li>Setting location boundaries for where students can participate in the poll (for attendance purposes)
+            </li>
+            <li>Customization of scoring and participation settings (i.e. making certain questions worth more credit)
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <i>Pollo Web is currently in the ideation and development phase. I will update here for our future process and
+        deliverables 🚀</i>
+    </p>
+
+  </div>
+
+  <p style="display: inline-block; width:100%;" class="center">
+    <a href="index.html" class="chunky-underline gray hover">back to projects</a>
+  </p>
+
+  <div style="width:100%; height: 8em; display: flex;">
+  </div>
+
+  <!-- footer -->
+  <p class="small gray center">
+    Thanks for visiting! Say hi 👋 on <a class="hover chunky-underline" target="_blank"
+      href="https://medium.com/@cindy.huang">Medium</a>,
+    <a class="hover chunky-underline" target="_blank" href="https://www.linkedin.com/in/cindyhuang-/">LinkedIn</a>, or
+    <a class="hover chunky-underline" target="_blank" href="mailto:ch832@cornell.edu">Email</a>.
+    Made with 💖 by Cindy Huang
+  </p>
+</body>
+
+</html>
