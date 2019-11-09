@@ -138,6 +138,7 @@ h1 {
   display:block;
 }
 h2{
+  margin-top:2em;
   text-align: left;
 }
 /*project title on home pg */
@@ -284,6 +285,7 @@ a svg rect{
   font-size:20px;
   font-style:italic;
   padding:30px;
+  line-height: 30px;
 }
 
 @media only screen and (max-width:1260px){
