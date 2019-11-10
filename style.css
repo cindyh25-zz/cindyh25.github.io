@@ -16,9 +16,6 @@ p{
   line-height:1.4rem;
  
 }
-p.list{
-  display: inline;
-}
 
 a.nav{
   color: #b5b5b5;
@@ -98,6 +95,9 @@ a.hover:hover{
 }
 .fleft{
   float:left;
+}
+.inline{
+  display:inline;
 }
 .center {
   display: block;
@@ -250,10 +250,9 @@ a svg rect{
 .chunky-underline:hover {
   background-size: 100% 100%;
 }
-.list{
+.mylist{
   margin: 2em; 
   line-height:2em;
-
 }
 
 li{
