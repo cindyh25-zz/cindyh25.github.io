@@ -65,7 +65,7 @@
   <div class="text">
     <h6>Motivation ❔</h6>
     At Cornell, many professors utilize polling software such as iClickers or Learning Catalytics in class.
-    They use this often in large lectures where it is hard to interact with everyone in the class. Some
+    They use this often in large lectures where <b>it is hard to interact with everyone in the class</b>. Some
     of the main motivations for polling during class are:
     <ul>
       <li>Taking attendance</li>
@@ -104,7 +104,7 @@
         <span class="underline">Iterate on last semester's user testing feedback</span>
       </a>
       <br>
-      <a href="#design-system">
+      <a href="#web">
         <span><b class="gray">04 </b></span>
         <span class="underline">Start designing our web app</span>
       </a>
@@ -115,9 +115,14 @@
       <span class="gray">01</span> Visual Design System 🎨
     </h2>
     <p>
-      The team lacked a consistent UI kit. I did an audit of all of the visual assets in the app, consolidated styles
-      into
-      a visual design system created using Figma, and updated the old designs using this system. <br>
+      When I joined the team, we lacked any sort of UI kit. I did an audit of all of the visual assets in the app and
+      realized
+      many inconsistencies and unnecessary styles, especially in extra colors and text styles.
+      This meant an unclear visual hierarchy and difficult UI for developers to work with. So, I consolidated styles
+      to only those that were necessary for differentiating an essential type of content. From there I created a
+      visual design system using Figma, taking advantage of their awesome nested components. I updated the old designs
+      using this system and
+      handed off the new screens to our engineers. <br>
     </p>
     <a href="https://www.figma.com/file/C9mZz5wT7GVyOmpVqfPgCi/pollo-system?node-id=128%3A185" target="_blank">
       <div class="button-center">
@@ -135,22 +140,27 @@
     <img src="assets/pollo-system-icons.png">
 
     <p style="margin-top:2em;">
-      This helped us resolve many inconsistencies in our designs/visual hierarchy and organize our files. In the future,
-      we will use Figma components'
-      best practices to design more efficiently and hand off clean and consistent designs to developers!
+      This gives our whole team a library of all master components and styles to reference and reuse. It
+      helped us resolve many inconsistencies in our designs and organize our files. In the future,
+      we will use Figma components' best practices to design more efficiently and hand off clean and consistent designs
+      to developers!
     </p>
 
     <h2 id="onboarding">
       <span class="gray">02</span> Onboarding 🚢
     </h2>
-    We wanted to create an onboarding flow for the first time a user makes a poll to make sure they know of all options.
-    Particularly, that
+    I also led the creation of an onboarding process for the first time a user
+    makes a poll to walk them through all of their options.
+    Particularly, we want users to know that:
     <ul>
       <li>Starting a question without inputting anything will autofill with choices "A", "B", etc.</li>
       <li>Selecting an option marks it as a correct answer.</li>
       <li>You can either save the question to poll later (planning lectures in advance) or start polling on the spot.
       </li>
     </ul>
+    These features are important for professors to know, as they allow them to create quick or generic A-D questions,
+    quiz students (or just show them which answer is correct), and choose whether to create question drafts or make
+    questions in the moment during lectures.
     <h6>
       Here is the final prototype.
     </h6>
@@ -160,9 +170,11 @@
       Here is how I got there.
     </h6>
     <p>
-      First, I mapped out different orderings and lengths of the onboarding flow to mimic how a professor would make a
-      poll
-      themselves and make it easy to follow.
+      First, I mapped out different orderings and lengths of the onboarding flow to mimic different ways that a
+      professor would create a
+      question and determine the best way to teach the process in the app. They range from concise to very detailed, and
+      vary in the
+      ordering of customization vs. autofill.
     </p>
     <img class="pic" src="assets/onboarding-flows.png">
 
@@ -170,8 +182,9 @@
       I decided on <strong>Flow 3</strong> because it was the most comprehensive, highlighting all features without
       unecessary steps.
       It also presented the autofill option more as a secondary option to filling out each question. I chose this
-      because prior research showed
-      the primary use case is for professors planning out questions in advance rather than on the spot. The autofill is
+      because prior research showed that
+      the primary use case is for professors planning out questions in advance rather than on the spot during lecture.
+      The autofill is
       still important if professors
       poll spontaneously or have questions on the lecture slides that don't fit within our length/format constraints to
       display on the app.
@@ -182,7 +195,7 @@
     <p>
       I also explored how to visually highlight both the specific parts of the screen (buttons, text fields, etc.) and
       the text for
-      onboarding instructions. I used a gray overlay and white outlines and text to emphasize components and provide
+      onboarding instructions. I used a dark overlay and white outlines and text to emphasize components and provide
       context.
     </p>
     <img class="pic" src="assets/onboarding-visual.png">
@@ -193,7 +206,9 @@
       Option B makes the text the primary focus with a heavier weight, fixed position, and simple copy. <br><br>
       I chose <strong>A</strong> based on feedback that the moving instructions provides clearer focus on where to click
       and
-      how to navigate.<br><br>
+      how to navigate. The motion design (seen in the prototype above) draws attention to the emphasized
+      buttons/components to most
+      effectively communicate the instructions.<br><br>
       <i>Further onboarding designs for the first launch of the app are in progress.</i>
     </p>
 
@@ -214,7 +229,8 @@
       on building a Pollo web app.<br><br>
       Our main goal for a web platform is to remove the friction with group controls and exporting attendance that
       professors faced through the smaller
-      mobile interface. This semester, we stripped away many group controls in order to ship a better functioning MVP.
+      mobile interface. (This semester, we stripped away many group controls on mobile in order to ship a better
+      functioning MVP.)
       <br><br>For web, these are our initial feature
       requirements in addition to the functionality of the mobile app:
       <ul>
@@ -234,7 +250,10 @@
         process and
         deliverables 🚀</i>
     </p>
-
+    <br><br>
+    <span class="gray">P.S. Special shoutout to my wonderful co-designer and mentor <a
+        href="https://www.amandamyang.com/" class="underline">Amanda
+        Yang</a>!</span>
   </div>
 
   <p style="display: inline-block; width:100%; margin-top:2em;" class="center">
