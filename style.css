@@ -14,6 +14,10 @@ a{
 p{
   margin:0px;
   line-height:1.4rem;
+ 
+}
+p.list{
+  display: inline;
 }
 
 a.nav{
@@ -246,6 +250,15 @@ a svg rect{
 .chunky-underline:hover {
   background-size: 100% 100%;
 }
+.list{
+  margin: 2em; 
+  line-height:2em;
+
+}
+
+li{
+  margin-bottom: 0.75em;
+}
 
 /*art gallery*/
 .artgal{
@@ -282,10 +295,10 @@ a svg rect{
   margin-bottom: 10px;
 }
 .emphasis{
-  font-size:20px;
+  font-size:1.5em;
   font-style:italic;
   padding:30px;
-  line-height: 30px;
+  line-height: 1.5em;
 }
 
 @media only screen and (max-width:1260px){
@@ -354,5 +367,3 @@ a svg rect{
   
   .about img{width:50%; margin-left: auto; margin-right: auto; float:none; margin-bottom: 2em;}
 }
-
-\
