@@ -70,8 +70,8 @@
     of the main motivations for polling during class are:
     <ul>
       <li>Taking attendance</li>
-      <li>Gauging the class’ understanding</li>
-      <li>Engaging students during class</li>
+      <li>Gauging the class’ understanding of material</li>
+      <li>Engaging students during class in an interactive way</li>
     </ul>
 
     <h6>
@@ -81,13 +81,15 @@
     <img src="assets/pollo-problem.png" class="center" style="width: 75%;">
 
     <br><br>
-    This can be a financial burden and an annoyance to carry around or sign up/register for.
+    For students, these can be a financial burden and an annoyance to carry around or register for, especially if
+    mutliple
+    classes use different polling methods.
     <div class="emphasis">
       How might we create a way for professors to easily track and interact with students and for students to
       participate in classes, for free?
     </div>
-    As part of <a target="_blank" href="https://www.cornellappdev.com/" class="underline">
-      Cornell AppDev</a>, my contributions as a product designer have been:
+    As a product designer for <a target="_blank" href="https://www.cornellappdev.com/" class="underline">
+      Cornell AppDev</a>, my main contributions have been:
 
     <div class="mylist">
       <a href="#design-system">
@@ -100,31 +102,44 @@
         <span class="underline">Design onboarding flows</span>
       </a>
       <br>
-      <a href="#iteration">
+      <!-- <a href="#iteration">
         <span><b class="gray">03 </b></span>
         <span class="underline">Iterate on last semester's user testing feedback</span>
       </a>
-      <br>
+      <br> -->
       <a href="#web">
-        <span><b class="gray">04 </b></span>
+        <span><b class="gray">03 </b></span>
         <span class="underline">Start designing our web app</span>
       </a>
       <br>
     </div>
+
+    <!-- ================= DESIGN SYSTEM ======================= -->
 
     <h2 id="design-system">
       <span class="gray">01</span> Visual Design System 🎨
     </h2>
     <p>
       When I joined the team, we lacked any sort of UI kit. I did an audit of all of the visual assets in the app and
-      realized many inconsistencies, especially in extra colors and text styles.
-      This meant an unclear visual hierarchy and difficult UI for developers to work with.<br><br>So, I <b>consolidated
-        styles
-        to only those that were necessary for differentiating an essential type of content.</b> From there I created a
-      visual design system using Figma, taking advantage of their awesome nested components. I updated the old designs
-      using this system and
-      handed off the new screens to our engineers. <br>
+      realized many inconsistencies, especially in extra colors and text styles.</p>
+    <img src="assets/pollo-old-styles.png" style="width: 40%; margin: 2em; float: left;">
+    <p style="margin: 4em 1em;">There were several very slightly different color and text styles that didn't serve a
+      unique purpose in the visual design.
+      This created an unclear visual hierarchy and difficult UI for developers to work with.</p>
+    <br><br>
+
+    <p style="clear: both;">
+      After categorizing the usages of similar styles, I consolidated them into a system focusing on <b>consistency</b>
+      and <b>intentionality</b>.
+      I only kept those that were necessary for differentiating an essential type of content, and linked elements with a
+      similar hierarchy to the same styles.<br>
+      From there I updated the old designs using this system!<br><br>
+      Finally, taking advantage of Figma's awesome nested components, I created a guide to all of the master components
+      and their various
+      instances. This guide can be referenced and reused by our designers, engineers, and marketing team to keep the
+      Pollo app and brand on point! <br>
     </p>
+
     <a href="https://www.figma.com/file/C9mZz5wT7GVyOmpVqfPgCi/pollo-system?node-id=128%3A185" target="_blank">
       <div class="button-center">
         Check it out on figma
@@ -132,27 +147,32 @@
     </a>
 
     <img src="assets/pollo-system-cover.png">
-
-    <img src="assets/pollo-system-color.png">
-    <img src="assets/pollo-system-type-ios.png">
-    <img src="assets/pollo-system-type-android.png">
-    <img src="assets/pollo-system-components-ios.png">
-    <img src="assets/pollo-system-components-android.png">
-    <img src="assets/pollo-system-icons.png">
+    <iframe style="border: none;" width="800" height="450"
+      src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FC9mZz5wT7GVyOmpVqfPgCi%2Fpollo-system%3Fnode-id%3D0%253A1"
+      allowfullscreen></iframe>
+    <iframe style="border: none;" width="800" height="450"
+      src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FC9mZz5wT7GVyOmpVqfPgCi%2Fpollo-system%3Fnode-id%3D1%253A2"
+      allowfullscreen></iframe>
+    <iframe style="border: none;" width="800" height="450"
+      src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FC9mZz5wT7GVyOmpVqfPgCi%2Fpollo-system%3Fnode-id%3D1%253A3"
+      allowfullscreen></iframe>
+    <iframe style="border: none;" width="800" height="450"
+      src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FC9mZz5wT7GVyOmpVqfPgCi%2Fpollo-system%3Fnode-id%3D113%253A0"
+      allowfullscreen></iframe>
 
     <p style="margin-top:2em;">
-      This gives our whole team a library of all master components and styles to reference and reuse. It
-      helped us resolve many inconsistencies in our designs and organize our files. In the future,
-      we will use Figma components' best practices to make our workflow more efficient and hand off clean and consistent
-      designs
-      to developers!
+      This helped us <b>resolve many inconsistencies</b> in our designs/visual hierarchy and <b>organize</b> our files.
+      In the future, we will use this library of styles and assets to design more efficiently and hand off clean and
+      consistent designs to developers!
     </p>
+
+    <!-- ================== ONBOARDING ==================== -->
 
     <h2 id="onboarding">
       <span class="gray">02</span> Onboarding 🚢
     </h2>
     I also led the creation of an onboarding process for the first time a user
-    makes a poll to walk them through all of their options.<br><br>
+    makes a poll to walk them through all of their customization options.<br><br>
     Particularly, we want users to know that:
     <ul>
       <li>Starting a question without inputting anything will autofill with choices "A", "B", etc.</li>
@@ -160,8 +180,12 @@
       <li>You can either save the question to poll later (planning lectures in advance) or start polling on the spot.
       </li>
     </ul>
-    These features are important for professors to know, as they allow them to create quick or generic A-D questions,
-    quiz students (or just show them which answer is correct), and choose whether to create question drafts or make
+    These features are important for professors to know, as <b>they allow them to use the app to fit their
+      own style of creating questions for the class</b>. Many professors like to create quick or generic A-D questions
+    if the full questions
+    are already incorporated in lecture slides or are written on the board. Some use polls to
+    quiz students or just want to show them which answer is correct. And we also allow them to choose whether to plan
+    questions as drafts or make
     questions in the moment during lectures.
     <h6>
       Here is the final prototype.
@@ -212,16 +236,16 @@
       <i>Further onboarding designs for the first launch of the app are in progress.</i>
     </p>
 
-    <h2 id="iteration">
+    <!-- <h2 id="iteration">
       <span class="gray">03</span> Iterating on user testing 🔧
     </h2>
     <p>
       These iterations will be a part of our next launch on iOS and Android. <br>
       <i>Check back in 2020 for all the fun details!</i>
-    </p>
+    </p> -->
 
     <h2 id="web">
-      <span class="gray">04</span> Designing Pollo for web 💻
+      <span class="gray">03</span> Designing Pollo for web 💻
     </h2>
     <p>
       To address professors' desire for more group controls and hesitance to allow phones in class, we are currently
