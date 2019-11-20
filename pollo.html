@@ -248,6 +248,16 @@
       <span class="gray">03</span> Designing Pollo for web 💻
     </h2>
     <p>
+      We surveyed 11 professors about how they use polling in their classes to learn how
+      to get Pollo used in classrooms. Here are the key insights we gained.
+      <ul>
+        <li><b>Professors need different ways to customize the way they score poll responses.</b>
+          Professors use polling for a mix of participation and grading purposes</li>
+        <li><b>Almost all professors plan questions for a lecture in advance.</b> They usually
+          prepare polls in a slide deck before the lecture.</li>
+        <li><b>A desktop interface is important to professors.</b> Desktops allow better,
+          more visual display of graphs and results.</li>
+      </ul>
       To address professors' desire for more group controls and hesitance to allow phones in class, we are currently
       working
       on building a Pollo web app.<br><br>
@@ -255,22 +265,11 @@
       professors faced through the smaller
       mobile interface. (This semester, we stripped away many group controls on mobile in order to ship a better
       functioning MVP.)
-      <br><br>For web, these are our initial feature
-      requirements in addition to the functionality of the mobile app:
-      <ul>
-        <li><b>More natural interface to draft lecture questions ahead of time</b></li>
-        <li><b>Seamless navigation between Pollo and exporting attendance as a CSV</b></li>
-        <li><b>Customization and group controls</b>
-          <ul>
-            <li>Control over how to display results and metrics (i.e. displaying percentages with vs. without the
-              answer)</li>
-            <li>Setting location boundaries for where students can participate in the poll (for attendance purposes)
-            </li>
-            <li>Customization of scoring and participation settings (i.e. making certain questions worth more credit)
-            </li>
-          </ul>
-        </li>
-      </ul>
+      <br><br>For web, we plan to start by creating a basic way to download attendance data, as this is an essential
+      part of why professors use polls, and it can only be done feasibly on a desktop.
+      Later, we will build the functionality of the mobile app in addition to these initial
+      web feature requirements:
+      <img class="pic" src="assets/pollo-web-reqs.png">
       <i>Pollo Web designs are currently in the ideation and development phase. I will update here for our future
         process and
         deliverables 🚀</i>
