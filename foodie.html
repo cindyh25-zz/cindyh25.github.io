@@ -78,21 +78,21 @@
     </h6>
     However, there are also problems with this method of communication.<br>
     <div class="pic" style="width:33%;">
-      <img src="/assets/foodie-screenshot-1.png" alt="Screenshot of typical message content">
+      <img src="/assets/foodie/screenshot-1.png" alt="Screenshot of typical message content">
       <p class="small">
         Typical message content
       </p>
     </div>
 
     <div class="pic" style="width:33%;">
-      <img src="/assets/foodie-screenshot-2.png" alt="Screenshot of confusion in messages">
+      <img src="/assets/foodie/screenshot-2.png" alt="Screenshot of confusion in messages">
       <p class="small">
         Confusion about location and time
       </p>
     </div>
 
     <div class="pic" style="width:33%;">
-      <img src="/assets/foodie-screenshot-3.png" alt="Screenshot of disorganized chat">
+      <img src="/assets/foodie/screenshot-3.png" alt="Screenshot of disorganized chat">
       <p class="small">
         The chat is cluttered with irrelevant content (people leaving and joining)
       </p>
@@ -120,14 +120,55 @@
     </ol>
 
     <h6>
-      Generation 📝
+      Ideation 📝
     </h6>
     To replace the free food GroupMe, our app had to be organized and simple to understand. We brainstormed different
     features
-    such as a map or a calendar, but ultimately decided to keep the interactions and screens simple with just a main
-    feed.<br>
+    such as a map or a calendar and evaluated the use cases and problems that each idea had.<br>
     <div class="pic">
-      <img src="/assets/foodie-flowchart.png" style="padding-bottom:10px;" alt="Flowchart of user flow">
+      <img src="/assets/foodie/Ideation.png">
+    </div>
+
+    At this point, I had questions about students' habits and tendencies surrounding free food events.
+    When and why do they care about free food (if at all)? What helps them decide whether to eat at
+    a free food event or use money? Do they plan to go to these events ahead of time or decide spontaneously? To find
+    out which features would be most valuable to students, I interviewed four college students. Here are the trends and
+    insights I found:
+    <ul>
+      <li><b>Free food is a spontaneous decision.</b> Students do not plan to eat free food ahead of time, and only look
+        to the GroupMe if they are
+        hungry in the moment, don't have other plans, and want to save money.</li>
+      <li><b>Students already know their way around campus.</b> They would like to know what events are close to them,
+        but don't need help navigating there.</li>
+      <li><b>Students' priority when looking for free food is convenience.</b> They go to these events out of interest
+        for the event or if the food
+        is close in distance, on their way, or happening at the moment when they start feeling hungry.</li>
+    </ul>
+    Based on these findings, I evaluated the above features in terms of feasibility and impact on students. I chose to
+    pursue the feed format, and brainstormed more specific features and functionality to fill students' needs.<br>
+
+    <div class="pic">
+      <img src="/assets/foodie/feasibility.png">
+      <p class="small">
+        Feasibility matrix and brainstorming 2.0
+      </p>
+    </div>
+
+    A real-time feed of free food postings was the most feasible and valuable for students' needs. It could provide the
+    functionality of searching for
+    events by location and time and also fit with the mental model of spontaneity of the current group chat in a more
+    organized format. The calendar doesn't fit students'
+    tendency to spontaneously decide to look for free food, and the map navigation also wouldn't be as valuable since
+    students already know their way around buildings.
+    Though people care about the distance and time of events, a filter function for the feed could fill that need while
+    fitting within our engineering constraints.
+
+    <br><br>
+    Next, I mapped out the flow and hierarchy of the app and how we'd implement browsing, filtering, and posting in the
+    feed.<br>
+
+    <div class="pic">
+      <img src="/assets/foodie/flow-diagram.png" style="padding-bottom:10px;" alt="Flowchart of user flow">
       <p class="small">
         Framework for our ideas
       </p>
@@ -136,15 +177,12 @@
     <h6>
       Develop 📲
     </h6>
-    I read through many messages and food postings in the current group chat and evaluated what content delivered the
-    most
-    clear and information to people. Then, I also spoke with students about what information they care about when
-    browsing
-    these events. Once I had an idea of the content that is absolutely essential and extra content that could be
-    optional,
-    but still helpful, I laid out the quick-view for the main feed as well as a detailed view.<br>
+    I read through many messages and food postings in the current group chat and evaluated what content was most
+    clear and informative, and what caused follow up questions and confusion. Once I had an idea of the content that is
+    absolutely essential and extra content that could be optional, but still helpful, I laid out the quick-view for the
+    main feed as well as a detailed view.<br>
     <div class="pic">
-      <img src="/assets/foodie-content.png" alt="Content requirements">
+      <img src="/assets/foodie/content-requirements.png" alt="Content requirements">
       <p class="small">
         Information displayed for each event in a consistent, easily scannable format
       </p>
@@ -160,7 +198,7 @@
     to separate and organize the student's own events so that they can view, edit, or update them.<br>
   </div>
   <div class="center" style="width:85%; margin-bottom: 25px;">
-    <img src="/assets/own-events.png" style="padding-top: 25px;" alt="Explorations for my events feed">
+    <img src="/assets/foodie/my-events.png" style="padding-top: 25px;" alt="Explorations for my events feed">
     <p class="small">
       "My Events" iterations
     </p>
@@ -174,30 +212,31 @@
     preferences. However, due to our limited time for this hack challenge, I decided that C would allow for prominent
     access to the events created by the user without an entirely separate page.<br><br>
 
-    I also created a UI kit to establish a clear hierarchy throughout the app. <br>
-    <div class="pic">
-      <img src="/assets/foodie-ui.png" alt="UI Kit">
-      <p class="small">
-        UI Kit
-      </p>
-    </div>
-
     <h6>
       Deliver 🚀
     </h6>
     <!--<strong>Final Screens</strong><br><br>-->
   </div>
+  Here are the final interactions handed off to developers!
   <div class="center" style="width:85%; margin-bottom: 25px;">
-    <img src="/assets/foodie-screens.png" alt="Final screens">
+    <img src="/assets/foodie/main-screens.png" alt="Final screens">
     <p class="small" style="line-height: 2em;">
       Main screens
     </p>
   </div>
 
   <div class="center" style="width:85%; margin-bottom: 25px;">
-    <img src="/assets/foodie-edit-events.png" alt="Edit events flow">
+    <img src="/assets/foodie/edit-events.png" alt="Edit events flow">
     <p class="small" style="line-height: 2em;">
       Full flow of editing user's own events
+    </p>
+  </div>
+
+  I also created a UI kit to establish a clear hierarchy and visual identity throughout the app. <br>
+  <div class="pic">
+    <img src="/assets/foodie/ui-kit.png" alt="UI Kit">
+    <p class="small">
+      UI Kit
     </p>
   </div>
 
@@ -205,7 +244,7 @@
     <strong>We won something! 🎉</strong><br>
     At the end of the semester, our team won Judge's Choice from the Cornell AppDev judges!<br>
     <div class="pic">
-      <img src="/assets/foodie-team.jpg" alt="Team picture">
+      <img src="/assets/foodie/team.jpg" alt="Team picture">
       <p class="small">
         Our team and mentors: Kevin Chan (mentor), me, Yuxuan Chen, Haiying Weng, Leo Liang, and Conner Swenberg
         (mentor)
@@ -213,7 +252,6 @@
     </div>
     During the Hack Challenge, I treated this project as a 3-day design sprint to give the team most of the time to
     develop.
-    This case study is a redesign I did out of interest.
     You can view our github and final submission <a target="_blank" href="https://github.com/haiyingweng/Foodie"
       class="underline">
       here,</a> based off of my earlier designs.<br>
