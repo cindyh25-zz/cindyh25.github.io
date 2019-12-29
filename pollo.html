@@ -58,7 +58,6 @@
       <div class="small">
         <a href="https://www.cornellappdev.com/" class="underline" target="_blank">Cornell AppDev<br></a>
         Designers: Cindy Huang, Amanda Yang
-
       </div>
     </div>
   </div>
@@ -74,250 +73,235 @@
       <li>Engaging students during class in an interactive way</li>
     </ul>
 
-    <h6>
-      The Problem 🧐
-    </h6>
-    Widely used polling software is <strong>expensive</strong> and/or <strong>bulky.</strong><br>
-    <img src="assets/pollo-problem.png" class="center" style="width: 75%;" alt="The problem with polling">
-
+    The goal of Pollo is to provide a <i>free</i> alternative to polling software through a mobile and web app.
     <br><br>
-    For students, these can be a financial burden and an annoyance to carry around or register for, especially if
-    mutliple
-    classes use different polling methods.
-    <div class="emphasis">
-      How might we create a way for professors to easily track and interact with students and for students to
-      participate in classes, for free?
-    </div>
+    During the Fall 2019 semester, <a href="https://www.amandamyang.com/" class="underline" target="_blank">Amanda </a>
+    and I worked on improving the polling experience for students and professors based on these
+    issues that were previously found during user testing:
+    <ul>
+      <li>Students are confused by the multiple choice question and answer flow</li>
+      <li>Students and professors confuse the join class and create class interaction</li>
+      <li>Professors need help on their first time creating a poll</li>
+    </ul>
+
+    To solve these pain points, we redesigned the following features:
+    <ol>
+      <li><a href="#mc" class="underline">Multiple choice answering interaction</a></li>
+      <li><a href="#ep" class="underline">Entry points to creating vs. joining a class</a></li>
+      <li><a href="#onboarding" class="underline">Onboarding for creating a poll</a></li>
+    </ol>
+
+    I also created a design system to improve consistency in our visual design and efficiency in the team's future
+    workflow.
     As a product designer for <a target="_blank" href="https://www.cornellappdev.com/" class="underline">
       Cornell AppDev</a>, my main contributions have been:
 
     <div class="mylist">
-      <a href="#design-system">
+      <a href="#multiple-choice">
         <span><b class="gray">01 </b></span>
-        <span class="underline">Create a visual design system</span>
+        <span class="underline">Multiple choice Q&A interaction</span>
       </a>
       <br>
-      <a href="#onboarding">
+      <a href="#entry-points">
         <span><b class="gray">02 </b></span>
-        <span class="underline">Design onboarding flows</span>
+        <span class="underline">Entry points to create and join classes</span>
       </a>
       <br>
-      <!-- <a href="#iteration">
+      <a href="onboarding">
         <span><b class="gray">03 </b></span>
-        <span class="underline">Iterate on last semester's user testing feedback</span>
-      </a>
-      <br> -->
-      <!-- <a href="#web">
-        <span><b class="gray">03 </b></span>
-        <span class="underline">Start designing our web app</span>
+        <span class="underline">Onboarding for creating polls</span>
       </a>
       <br>
-    </div> -->
-
-      <!-- ================= DESIGN SYSTEM ======================= -->
-
-      <h2 id="design-system">
-        <span class="gray">01</span> Visual Design System 🎨
-      </h2>
-      <p>
-        When I joined the team, we lacked any sort of UI kit. I did an audit of all of the visual assets in the app and
-        realized many inconsistencies, especially in extra colors and text styles.</p>
-      <img src="assets/pollo-old-styles.png" style="width: 50%; margin: 2em 2em 0 0; float: left;" alt="Old styles">
-      <p style="margin: 4em 1em;">There were several very similar color and text styles that didn't serve a
-        unique purpose in the design.
-        This created an unclear visual hierarchy and difficult UI for developers to work with.</p>
-      <br><br>
-
-      <p style="clear: both;">
-        After categorizing the usages of similar styles, I consolidated them into a system focusing on
-        <b>consistency</b>
-        and <b>intentionality</b>.
-        I only kept those that were necessary for differentiating an essential type of content, and linked elements with
-        a
-        similar hierarchy to the same styles.<br><br>
-        From there I updated the old designs using this system!<br><br>
-        Finally, taking advantage of Figma's awesome nested components, I created a guide to all of the master
-        components
-        and their various
-        instances. This guide can be referenced and reused by our designers, engineers, and marketing team to keep the
-        Pollo app and brand on point. <br>
-      </p>
-
-      <a href="https://www.figma.com/file/C9mZz5wT7GVyOmpVqfPgCi/pollo-system?node-id=128%3A185" target="_blank">
-        <div class="button-center">
-          Check it out on figma
-        </div>
-      </a>
-
-      <img src="assets/pollo-system-cover.png" alt="Design system cover photo">
-      <iframe style="border: none;" width="100%" height="450"
-        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FC9mZz5wT7GVyOmpVqfPgCi%2Fpollo-system%3Fnode-id%3D0%253A1"
-        allowfullscreen></iframe>
-      <iframe style="border: none;" width="100%" height="450"
-        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FC9mZz5wT7GVyOmpVqfPgCi%2Fpollo-system%3Fnode-id%3D1%253A2"
-        allowfullscreen></iframe>
-      <iframe style="border: none;" width="100%" height="450"
-        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FC9mZz5wT7GVyOmpVqfPgCi%2Fpollo-system%3Fnode-id%3D1%253A3"
-        allowfullscreen></iframe>
-      <iframe style="border: none;" width="100%" height="450"
-        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FC9mZz5wT7GVyOmpVqfPgCi%2Fpollo-system%3Fnode-id%3D113%253A0"
-        allowfullscreen></iframe>
-
-      <p style="margin-top:2em;">
-        This helped us <b>resolve many inconsistencies</b> in our designs/visual hierarchy and <b>organize</b> our
-        files.
-        In the future, we will use this library of styles and assets to design more efficiently and hand off clean and
-        consistent designs to developers!
-      </p>
-
-      <!-- ================== ONBOARDING ==================== -->
-
-      <h2 id="onboarding">
-        <span class="gray">02</span> Onboarding 🚢
-      </h2>
-      I also led the creation of an onboarding process for the first time a professor
-      makes a poll to walk them through all of their customization options.<br><br>
-      Particularly, we want professors to know that:
-      <ul>
-        <li>Starting a question without inputting anything will autofill with choices "A", "B", etc.</li>
-        <li>Selecting an option marks it as a correct answer.</li>
-        <li>You can either save the question to poll later (planning lectures in advance) or start polling on the spot.
-        </li>
-      </ul>
-      These features are important for professors to know, as <b>they allow them to use the app to fit their
-        own style of creating questions for the class</b>. Many professors like to create quick or generic A-D questions
-      if the full questions
-      are already incorporated in lecture slides or are written on the board. Some use polls to
-      quiz students or just want to show them which answer is correct. And we also allow them to choose whether to plan
-      questions as drafts or make
-      questions in the moment during lectures.
-      <h6>
-        Here is the final prototype.
-      </h6>
-      <video width="100%" controls>
-        <source src="assets/onboarding-video.mp4" type="video/mp4"></video>
-      <h6>
-        Here is how I got there.
-      </h6>
-      <p>
-        First, I mapped out different orderings and lengths of the onboarding flow to mimic different ways that a
-        professor would create a
-        question and determine the best way to teach the process in the app. They range from concise to very detailed,
-        and
-        vary in the
-        ordering of customization vs. autofill.
-      </p>
-      <img class="pic" src="assets/onboarding-flows.png" alt="Possible onboarding flows">
-
-      <p>
-        I decided on <strong>Flow 3</strong> because it was the most comprehensive, highlighting all features without
-        unecessary steps.
-        It also presented the autofill option more as a secondary option to filling out each question. I chose this
-        because prior research showed that
-        the primary use case is for professors planning out questions in advance rather than on the spot during lecture.
-        Still, instructions for autofilling is very important for professors to know how to
-        poll spontaneously or still use Pollo even if they have questions on lecture slides that don't fit within our
-        length/format constraints to
-        display on the app.
-      </p>
-      <h6>
-        Visual explorations
-      </h6>
-      <p>
-        I also explored how to visually highlight both the specific parts of the screen (buttons, text fields, etc.) and
-        the text for
-        onboarding instructions. I used a dark overlay and white outlines and text to emphasize components and provide
-        context.
-      </p>
-      <img class="pic" src="assets/onboarding-visual.png" alt="Onboarding visual design">
-      <p>
-        Option A is more dynamic which brings people's attention to the buttons highlighted. But, the copy is less
-        concise
-        and the motion
-        does not leave a good space for a "tap to continue" prompt. <br>
-        Option B makes the text the primary focus with a heavier weight, fixed position, and simple copy. <br><br>
-        I chose <strong>A</strong> based on feedback that the motion design (see prototype above) provides clearer focus
-        on where to click
-        and how to navigate. <br><br>
-        <i>Further onboarding designs for the first launch of the app are in progress.</i>
-      </p>
-
-      <!-- <h2 id="iteration">
-      <span class="gray">03</span> Iterating on user testing 🔧
-    </h2>
-    <p>
-      These iterations will be a part of our next launch on iOS and Android. <br>
-      <i>Check back in 2020 for all the fun details!</i>
-    </p> -->
-
-      <!-- <h2 id="web">
-      <span class="gray">03</span> Designing Pollo for web 💻
-    </h2>
-    <p>
-      With team members from the product, design, and marketing/operations side, we created a survey
-      to send to professors to find out more about how and why they poll in classes. Our goals with this round of
-      user research was to learn more about how professors feel about polling and allowing phones in classes in order
-      to understand how we can get professors to use Pollo in their classes.
-      <br><br>
-      <b>Selected questions for professors:</b> <br>
-      <i>
-        What polling software do you use for class if any? What do you like and dislike about your method?<br>
-        Check (or describe) the most important features of an in-class polling app to you.<br>
-        Do you poll students for attendance?<br>
-        Do you use student responses for grading (right vs. wrong) or participation points?<br>
-        Do you allow phones/electronic in class? Would you allow them for polling purposes?<br>
-        Is a web interface for a polling application important for you to display results in class?<br>
-        <span class="small">Survey created and distributed with help from Jack Thompson, Gracie Jing, and Amanda Yang.
-        </span>
-      </i>
-      <br><br>
-      We received 11 responses from professors. Here are the key insights we gained.
-      <ul>
-        <li><b>Professors need different ways to customize the way they score poll responses.</b>
-          Professors use polling for a mix of participation and grading purposes</li>
-        <li><b>Almost all professors plan questions for a lecture in advance.</b> They usually
-          prepare polls in a slide deck before the lecture.</li>
-        <li><b>A desktop interface is important to professors.</b> Desktops allow better,
-          more visual display of graphs and results.</li>
-      </ul>
-      To address professors' desire for more group controls and hesitance to allow phones in class, we are currently
-      working
-      on building a Pollo web app.<br><br>
-      Our main goal for a web platform is to remove the friction with group controls and exporting attendance that
-      professors faced through the smaller
-      mobile interface. (This semester, we stripped away many group controls on mobile in order to ship a better
-      functioning MVP.)
-      <br><br>For web, we plan to start by creating a basic way to download attendance data, as this is an essential
-      part of why professors use polls, and it can only be done feasibly on a desktop.
-      Later, we will build the functionality of the mobile app in addition to these initial
-      web feature requirements based on professor feedback:<br>
-      <img class="pic" src="assets/pollo-web-reqs.png"
-        alt="Web feature requirements: group controls, better planning, and customization">
-      <i>Pollo Web designs are currently in the research and ideation phase. I will update here for our future
-        process and
-        deliverables 🚀</i>
-    </p> -->
-      <br>
-      <span class="gray">P.S. Special shoutout to my wonderful co-designer and mentor <a
-          href="https://www.amandamyang.com/" class="underline" target="_blank">Amanda
-          Yang</a> and the rest of AppDev for teaching me so much!</span>
     </div>
 
-    <p style="display: inline-block; width:100%; margin-top:2em;" class="center">
-      <a href="index.html" class="chunky-underline gray hover">back to projects</a>
-    </p>
+    I also created a <a href="https://www.figma.com/file/C9mZz5wT7GVyOmpVqfPgCi/pollo-system?node-id=134%3A105"
+      class="underline" target="_blank">
+      design system</a> to improve consistency in our visual design and efficiency in the team's future workflow. <br>
 
-    <div style="width:100%; height: 8em; display: flex;">
+    <h2 id="multiple-choice">
+      <span class="gray">01</span> Multiple choice Q&A interaction
+    </h2>
+    With multiple choice questions, a trend during past user testing sessions was that students were confused by the the
+    content
+    and visual display of the response choices and stats shown at the end. It was unclear which answer the student chose
+    and
+    which answer was correct, since there are many combinations of correct/incorrect/no right answer and chosen/not
+    chosen by the
+    student that can occur. We also reevaluated what results the student needs to see, including detailed percentage
+    breakdowns,
+    visual bar graph of responses and the total number of responses.
+    <br><br>
+    Here is the flow of the question card states that we considered at first for answering a multiple choice
+    question:<br>
+    <div class="pic">
+      <img src="assets/pollo/mc-old.png">
+    </div>
+    However, with this interaction, the green color of the selected response when the poll is live can be mistaken for
+    feedback that the
+    choice was correct. Also, when the final results are shared with the class in the last step, the difference in color
+    intensity may not
+    be explicitly clear that the brighter color indicates the student’s selected response. The red/green correctness
+    indicator is also not
+    accessible for some colorblind students.
+    <br><br>
+    So, we explored different ways to show correctness and the student’s selection below.<br>
+    <div class="pic">
+      <img src="assets/pollo/mc-iterations.png">
     </div>
 
-    <!-- footer -->
-    <p class="small gray center">
-      Thanks for visiting! Say hi 👋 on <a class="hover chunky-underline" target="_blank"
-        href="https://medium.com/@cindy.huang">Medium</a>,
-      <a class="hover chunky-underline" target="_blank" href="https://www.linkedin.com/in/cindyhuang-/">LinkedIn</a>, or
-      <a class="hover chunky-underline" target="_blank" href="mailto:ch832@cornell.edu">Email</a>.
-      Made with 💖 by Cindy Huang
+    We chose to move forward with the radio button treatment for choosing an answer since it is the most clear indicator
+    of selected, and is consistent with students’ mental model of multiple choice. In our final iterations we
+    incorporated
+    the icons to show correctness without relying solely on color. Next we continued to explore the use of percentages
+    and
+    bar graphs for results. <br><br>
+
+    <div class="pic">
+      <img src="assets/pollo/mc-percent-iterations.png">
+    </div>
+    Students want to know how they did relative to the class. The quickest way to communicate this is visually, and
+    exact percentages are not necessary to convey relative performance. So, we chose <b>A</b>. <br>
+    <h6>
+      Deliver
+    </h6>
+    Here is the updated, full flow for answering a multiple choice question!<br>
+    <div class="pic">
+      <img src="assets/pollo/mc-final-flow.png">
+    </div>
+
+
+    <h2 id="entry-points">
+      <span class="gray">02</span> Entry points for creating and joining a class
+    </h2>
+    Another common mistake from students was accidentally creating a class instead of joining one. Previously, entry
+    points
+    for both actions were accessible from the home screen, regardless of whether the user is a student or professor.
+    <br>
+    <div class="pic">
+      <img src="assets/pollo/cta-old.png">
+    </div>
+
+    Our product is a single app for both students and professors to use for their own purposes. Their primary objectives
+    for polling software are very separate: either participating in joined polls, or creating polls for a class. So,
+    <b>for
+      different use cases, there is a different primary action.</b> Since users can toggle between their joined and
+    created classes,
+    I decided it would be more logical if the primary actions toggle as well, so that the “+” icon would not be
+    necessary. <br><br>
+
+    For consistency, the primary CTA for the joined and created screens should have the same placement. But, a different
+    visual
+    treatment would help as a cue that the CTA is changing along with the screen’s content. So, I designed different
+    ways to visually show a change
+    in the primary action while staying consistent with the app’s design system.<br>
+    <div class="pic">
+      <img src="assets/pollo/cta-explorations.png">
+    </div>
+
+    I chose a light gray background to contrast the dark bar color on the Joined screen while
+    keeping the behavior of the button consistent in inactive/active states. <br>
+    <h6>
+      Delivery
+    </h6>
+
+    Here is the final interaction for toggling between student and professors’ use cases:<br>
+    <div class="pic">
+      <img src="assets/pollo/entry-points.gif" class="center" style="width: 50%">
+    </div>
+
+    <!-- ================== ONBOARDING ==================== -->
+
+    <h2 id="onboarding">
+      <span class="gray">03</span> Onboarding 🚢
+    </h2>
+    With creating a poll, our team designed and engineered a few features to help professors customize
+    the way they create polls to fit their varying workflows. These options are not all immediately clear,
+    so we wanted an onboarding flow to guide first time users through creating their first polls.
+    <br><br>
+    In particularly, we want professors to know that:
+    <ul>
+      <li>Starting a question without inputting anything will autofill with choices "A", "B", etc.</li>
+      <li>Selecting an option marks it as a correct answer.</li>
+      <li>You can either save the question to poll later (planning lectures in advance) or start polling on the spot.
+      </li>
+    </ul>
+    These features are important for professors to know, as <b>they allow them to use the app to fit their
+      own style of creating questions for the class</b>. Many professors like to create quick or generic A-D questions
+    if the full questions
+    are already incorporated in lecture slides or are written on the board. Some use polls to
+    quiz students or just want to show them which answer is correct. And we also allow them to choose whether to plan
+    questions as drafts or make questions to immediately start polling during lectures.
+    <h6>
+      Here is the final prototype.
+    </h6>
+    <div class="pic">
+      <img src="assets/pollo/onboarding.gif">
+    </div>
+
+    <h6>
+      Here is how I got there.
+    </h6>
+    <p>
+      First, I mapped out different orderings and lengths of the onboarding flow to mimic different ways that a
+      professor would create a question and determine the best way to teach the process in the app.
+      They range from concise to very detailed, and vary in the ordering of customization vs. autofill.
     </p>
+    <img class="pic" src="assets/onboarding-flows.png" alt="Possible onboarding flows">
+    <p>
+
+      I decided on <strong>Flow 3</strong> because it was the most comprehensive, highlighting all features without
+      unecessary steps.
+      It also presented the autofill option more as a secondary option to filling out each question. I chose this
+      because past research showed that
+      the primary use case is for professors planning out questions in advance rather than on the spot during lecture.
+      Still, instructions for autofilling is very important for professors to know how to
+      poll spontaneously or still use Pollo even if they have questions on lecture slides that don't fit within our
+      length/format constraints to
+      display on the app.
+    </p>
+    <h6>
+      Visual explorations
+    </h6>
+    <p>
+      I also explored how to visually highlight both the specific parts of the screen (buttons, text fields, etc.) and
+      the text for
+      onboarding instructions. I used a dark overlay and white outlines and text to emphasize components and provide
+      context.
+    </p>
+    <img class="pic" src="assets/onboarding-visual.png" alt="Onboarding visual design">
+    <p>
+      Option A is more dynamic which brings people's attention to the buttons highlighted. But, the copy is less
+      concise
+      and the motion
+      does not leave a good space for a "tap to continue" prompt. <br>
+      Option B makes the text the primary focus with a heavier weight, fixed position, and simple copy. <br><br>
+      I chose <strong>A</strong> based on feedback that the motion design (see prototype above) provides clearer focus
+      on where to click
+      and how to navigate. <br><br>
+      <i>Further onboarding designs for the first launch of the app are in progress.</i>
+    </p>
+
+    <br>
+    <span class="gray">P.S. Special shoutout to my wonderful co-designer and mentor <a
+        href="https://www.amandamyang.com/" class="underline" target="_blank">Amanda
+        Yang</a> and the rest of AppDev for teaching me so much!</span>
+  </div>
+
+  <p style="display: inline-block; width:100%; margin-top:2em;" class="center">
+    <a href="index.html" class="chunky-underline gray hover">back to projects</a>
+  </p>
+
+  <div style="width:100%; height: 8em; display: flex;">
+  </div>
+
+  <!-- footer -->
+  <p class="small gray center">
+    Thanks for visiting! Say hi 👋 on <a class="hover chunky-underline" target="_blank"
+      href="https://medium.com/@cindy.huang">Medium</a>,
+    <a class="hover chunky-underline" target="_blank" href="https://www.linkedin.com/in/cindyhuang-/">LinkedIn</a>, or
+    <a class="hover chunky-underline" target="_blank" href="mailto:ch832@cornell.edu">Email</a>.
+    Made with 💖 by Cindy Huang
+  </p>
 </body>
 
 </html>
