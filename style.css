@@ -281,6 +281,10 @@ li{
   line-height: 1.4rem;
 }
 
+.text h6{
+  line-height: 2rem;
+}
+
 .pic{
   position: relative;
   display:block;
