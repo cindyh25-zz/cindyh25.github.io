@@ -200,7 +200,7 @@ h6{
   border-radius: 0.5em;
   text-align: center;
   float: left;
-  margin: 2em 0;
+  margin: 2em 1em 2em 0;
   transition: all 0.2s ease-in-out;
   /* width: 144px;
   height:36px;
@@ -209,7 +209,7 @@ h6{
 }
 
 .primary.button{
-  background-color: gray;
+  background-color: #959595;
   color: white;
 }
 
