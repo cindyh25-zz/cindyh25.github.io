@@ -181,8 +181,8 @@ h6{
   display: block;
   margin: 2em auto;
   padding: .5em 2em;
-  background-color: black;
-  color:white;
+  background-color: white;
+  color:#959595;
   width: 200px;
   text-align: center;
   line-height:36px;
@@ -194,8 +194,10 @@ h6{
   text-transform: uppercase;
   display: inline-block;
   padding: 1em 2em;
-  color: black;
-  border: 2px solid black;
+  color: #959595;
+  background-color: white;
+  border: 2px solid #959595;
+  border-radius: 0.5em;
   text-align: center;
   float: left;
   margin: 2em 0;
@@ -206,9 +208,19 @@ h6{
   line-height:36px; */
 }
 
+.primary.button{
+  background-color: gray;
+  color: white;
+}
+
 .button:hover{
+  color: black;
+  border-color: black;
+}
+
+.primary.button:hover{
   background-color: black;
-  color:white;
+  border-color: black;
 }
 
 .container-left{
