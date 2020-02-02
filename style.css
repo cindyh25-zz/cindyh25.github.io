@@ -8,7 +8,7 @@ html{
   margin:40px 100px;
 }
 a{
-  color:black;
+  color:#5876B0;
   text-decoration:none;
 }
 p{
@@ -18,7 +18,7 @@ p{
 }
 
 a.nav{
-  color: #b5b5b5;
+  color: #5876B0;
   float:right;
   text-decoration: none;
   margin-left: 40px;
@@ -182,7 +182,7 @@ h6{
   margin: 2em auto;
   padding: .5em 2em;
   background-color: white;
-  color:#959595;
+  color: #5876B0;
   width: 200px;
   text-align: center;
   line-height:36px;
@@ -194,9 +194,9 @@ h6{
   text-transform: uppercase;
   display: inline-block;
   padding: 1em 2em;
-  color: #959595;
+  color: #5773A8;
   background-color: white;
-  border: 2px solid #959595;
+  border: 2px solid #5876B0;
   border-radius: 0.5em;
   text-align: center;
   float: left;
@@ -209,18 +209,18 @@ h6{
 }
 
 .primary.button{
-  background-color: #959595;
+  background-color: #5876B0;
   color: white;
 }
 
 .button:hover{
-  color: black;
-  border-color: black;
+  color: #1f3359;
+  border-color: #1f3359;
 }
 
 .primary.button:hover{
-  background-color: black;
-  border-color: black;
+  background-color: #1f3359;
+  border-color: #1f3359;
   color: white;
 }
 
