@@ -1,0 +1,347 @@
+html{
+  scroll-behavior:smooth;
+}
+/* text styles */
+h1{
+ font-family: "Abhaya Libre", "Unna", serif;
+ font-weight: bold;
+ font-size: 3em;
+}
+
+h2{
+  font-family: "Abhaya Libre", "Unna", serif;
+  font-weight: bold;
+  font-size: 1.75em;
+  margin: 1.25em 0 0.5em 0
+ }
+
+ h3{
+  font-family: "Abhaya Libre", "Unna", serif;
+  font-weight: bold;
+  font-size: 1.5em;
+ }
+ h3#nav-name{
+   margin:0;
+ }
+
+ h4{
+  font-family: "Abhaya Libre", "Unna", serif;
+  font-weight: normal;
+  font-size: 1.25em;
+  margin: 0.5em 0;
+ }
+
+h5{
+  margin: 1em 0;
+}
+
+p{
+  line-height: 1.5em;
+}
+
+#blurb p {
+  font-size: 2em;
+  margin-right:20%;
+}
+
+.project p {
+  margin: 0.25em 0;
+}
+
+a{
+  color: inherit;
+  text-decoration: inherit;
+}
+
+li {
+  margin:0.5em 0;
+}
+
+.small{
+  font-size:12px;
+}
+
+body {
+  font-family: "Inter", "Helvetica Neue", sans-serif;
+  margin: 0 15% 4em 15%;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+/* colors */
+.gray {
+  color:#71748C;
+}
+.black {
+  color: #000000;
+}
+
+/* top navigation */
+.topnav{
+  height: 50px;
+}
+
+#links {
+  right: 2em;
+  top:1em;
+  position: absolute;
+}
+
+.topnav a {
+  padding: 1em;
+  text-decoration: none;
+}
+
+.active {
+  color: black;
+  font-weight: bold;
+}
+
+/* home page */
+.topnav a:hover{
+  color:black;
+}
+.column{
+  display: inline-block;
+  width:45%;
+}
+
+.project {
+  padding: 3em;
+  transition: 0.3s ease-in-out;
+}
+.project:hover{
+  box-shadow: 0 0 8px #d4d4d4;
+  transform: translateY(-8px);
+  transition: 0.3s ease-in-out;
+}
+.mock{
+  width: 60%;
+  margin: auto;
+}
+.mock img{
+  width: 100%;
+}
+.community-logo img{
+  width: 100%;
+}
+
+
+#intro {
+  vertical-align: top;
+  /* margin-left: 2em; */
+  padding-right: 5%;
+}
+
+/* spacing */
+.section{
+  margin: 0.5em 0;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10%;
+}
+
+.divider {
+  height: 3em;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:75%;
+  text-align:center;
+}
+.two-columns{
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-column-gap: 10%;
+  grid-row-gap: 2em;
+}
+.three-columns{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  /* grid-gap: 5%; */
+}
+
+
+.padding-r{
+  padding-right: 4em;
+}
+
+/* extra decor */
+.shape {
+  background-color: #CAE9FD;
+  position: absolute;
+  z-index: -1;
+}
+#circle1{
+  width: 48px;
+  height: 48px;
+  transform: translate(-20px,-8px);
+  border-radius: 52% 48% 50% 54% / 50% 59% 40% 54%;
+}
+#circle2 {
+  width: 50px;
+  height: 48px;
+  transform: translate(-20px,-8px);
+  border-radius: 60% 45% 57% 44% / 59% 56% 60% 54%;
+}
+#circle3 {
+  width: 48px;
+  height: 50px;
+  transform: translate(-20px,-8px);
+  border-radius: 59% 48% 42% 54% / 60% 59% 35% 46%;
+}
+
+/* case study */
+
+.projheader{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin: 3em 0;
+}
+
+.projheader p {
+  margin: 0.5em 0;
+  font-size: 0.75em;
+}
+
+.casestudy{ 
+  width: 75%;
+  margin: 4em auto;
+}
+.casestudy h4{
+  margin-top: 2em;
+  font-weight: bold;
+}
+.casestudy h2{
+  margin-top: 4em;
+}
+.casestudy p{
+  line-height: 1.5em;
+}
+
+.casestudy img{
+    display: block;
+    width: 100%; 
+}
+
+.emphasis{
+  font-size:1.5em;
+  font-style:italic;
+  padding:30px;
+  line-height: 1.5em;
+}
+
+.pic{
+  text-align:center;
+  margin: 3em 0;
+}
+.pic img{
+  margin-bottom: 10px;
+}
+.wide{
+  width:85%; 
+  margin-bottom: 25px;
+}
+
+.wide img{
+  width: 100%;
+}
+
+/* about */
+#bio{
+  width: 55%;
+  display: inline-block;
+}
+
+#main-about{
+  margin: 6em 0;
+}
+
+#headshot {
+  width: 30%;
+  vertical-align: top;
+  padding-left: 8%;
+  float: right;
+}
+
+#headshot img{
+  width: 100%;
+}
+
+@media only screen and (max-width:850px){
+  .column{
+    width: 100%;
+  }
+
+  .three-columns {
+    grid-template-columns: 100%;
+  }
+
+  .two-columns {
+    grid-template-columns: 100%;
+    grid-gap: 1em;
+  }
+
+  .info {
+    display: inline-block;
+    vertical-align: top;
+    margin: 1em;
+    width: 50%;
+}
+
+.mock {
+  width: 40%;
+  display: inline-block;
+}
+.project{
+  padding: 1em;
+}
+
+  .community-logo {
+    width: 20%;
+    display: inline-block;
+
+}
+}
+
+@media only screen and (max-width:550px){
+  body{
+    margin: 0 5% 5% 5%;
+  }
+
+  .casestudy{
+    width: 85%;
+  }
+  .info{
+    width: 90%;
+    display: block;
+  }
+  .mock {
+    display: block;
+  }
+  .community-logo {
+    width: 50%;
+    display:block;
+    margin: auto;
+}
+
+  #bio {
+    width: 100%;
+  }
+  #headshot {
+    width: 50%;
+    vertical-align: top;
+    float: none;
+    position: relative;
+    top: 0;
+    margin: 2em auto;
+}
+}

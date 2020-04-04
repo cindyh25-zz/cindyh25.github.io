@@ -10,66 +10,81 @@
   <link rel="icon" href="/assets/favicon.png" type="image/png">
 
   <!-- import the webpage's stylesheet -->
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/stylenew.css">
 
   <!-- import the webpage's javascript file -->
   <script src="/script.js" defer></script>
 
   <!-- font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abhaya+Libre">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
 </head>
 
 <body>
-  <div class="header">
-    <a href="index.html"><img src="/assets/name.png" id="logo" alt="Logo"></a>
 
-    <a href="/assets/Huang_Cindy.pdf" class="nav hover chunky-underline" target="_blank">resume</a>
-    <a href="about.html" class="nav hover chunky-underline active">about</a>
-    <a href="index.html" class="nav hover chunky-underline">projects</a>
+  <div class="topnav">
+    <a href="index.html">
+      <h3 id="nav-name">Cindy Huang</h3>
+    </a>
+
+    <div id=links>
+      <a href="index.html" class="gray">home</a>
+      <a href="index.html#projects" class="gray">work</a>
+      <a href="about.html" class="active">me</a>
+      <a href="/assets/Huang_Cindy.pdf" class="gray">resume</a>
+    </div>
   </div>
-  <div class="center about" style="display: block;">
 
-    <img src="/assets/headshot.jpg" alt="Headshot">
+  <div id="main-about">
+    <h2>Hi! I'm Cindy.</h2>
 
-    <div class="bio">
+    <div id="headshot">
+      <img src="assets/headshot.jpg">
+    </div>
+
+    <div id="bio">
       <p>
-        <span style="font-size:20px">Hello! I'm Cindy.</span> <br><br>
-        I'm an aspiring designer and developer in my second year studying Computer Science at Cornell University.
-        I started my college career on the Environmental Engineering track, unsure of what I
-        really wanted to pursue.
-        Thankfully I discovered Intro to Digital Product Design, a student-run class that helped me fall in
-        love with design as it was the perfect blend of my interests in technology, problem solving, and creative work.
-        This year, I will help co-instruct the course coming full circle and giving back to the community!
-        <br><br>
-        At school, I am designing apps with <a href="https://www.cornellappdev.com/" class="gray hover chunky-underline"
-          target="_blank">Cornell AppDev</a>, and promoting design education with
-        <a href="https://cornellmedium.design/" class="gray hover chunky-underline" target="_blank">Medium Design
-          Collective</a>, and fostering inclusion in tech with
-        <a href="https://wicc.cornell.edu/" class="gray hover chunky-underline" target="_blank">Women in Computing at
-          Cornell</a>.
-        <br><br>
-        I am also a big fan of sustainable fashion 👕, embroidery 🧵, and horticulture🌱.<br><br>
-        Feel free to contact me to chat about any of these things at ch832@cornell.edu!<br><br><br>
-
-        <div style="clear:both; display:block;">
-          <a href="/assets/Huang_Cindy.pdf" target="_blank" class="button">
-            view resume
-          </a>
-        </div>
+        I’m currently studying Computer Science at Cornell University and exploring all things design, branding, and
+        inclusion in tech with the magical people part of Cornell AppDev, Medium Design Collective, and Women in
+        Computing at Cornell.
       </p>
+      <p>I’m also a big fan of sustainable fashion (and an ex-environmental engineer), embroidery, and calligraphy! </p>
+      <p>I love to make things through all sorts of mediums.
+        If anything on this site is interesting to you, reach out at ch832@cornell.edu and I’d love to chat.</p>
+
+      <div class="divider"></div>
+      <div class="two-columns">
+        <div>
+          <h4>how I got here</h4>
+          <p>I started out in environmental engineering, decided I didn’t want to be an engineer, then decided that CS
+            was
+            actually a pretty cool way of engineering things. Then I took Intro to Digital Product Design, fell in love
+            with
+            design, and met lots of other cool people who love the same things!</p>
+        </div>
+        <div>
+          <h4>what keeps me going</h4>
+          <p>Tackling interesting problems that I don’t know the answer to.</p>
+          <p>
+            Also, coffee and the amazing creators around me!</p>
+        </div>
+      </div>
     </div>
 
   </div>
 
-  <div style="width:100%; height: 8em; display: flex;">
+  </div>
+
+  <div style="width:100%; height: 6em; display: flex;">
   </div>
   <p class="small gray center">
     Thanks for visiting! Say hi 👋 on
-    <a class="hover chunky-underline" target="_blank" href="https://www.linkedin.com/in/cindyhuang-/">LinkedIn</a>,
-    <a class="hover chunky-underline" target="_blank" href="https://angel.co/cindy-huang-15">AngelList</a>,
-    <a class="hover chunky-underline" target="_blank" href="mailto:ch832@cornell.edu">Email</a>, or
-    <a class="hover chunky-underline" target="_blank" href="https://twitter.com/cndyhuang">Twitter</a>.<br>
-    Made with 💖 by Cindy Huang
+    <a class="underline" target="_blank" href="https://www.linkedin.com/in/cindyhuang-/">LinkedIn</a>,
+    <a class="underline" target="_blank" href="https://angel.co/cindy-huang-15">AngelList</a>,
+    <a class="underline" target="_blank" href="mailto:ch832@cornell.edu">Email</a>, or
+    <a class="underline" target="_blank" href="https://twitter.com/cndyhuang">Twitter</a>.</p>
+  <p class="small gray center"> Made with 💖 by Cindy Huang
   </p>
 
 </body>

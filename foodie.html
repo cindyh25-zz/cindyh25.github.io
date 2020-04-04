@@ -10,62 +10,78 @@
   <link rel="icon" href="/assets/favicon.png" type="image/png">
 
   <!-- import the webpage's stylesheet -->
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/stylenew.css">
 
   <!-- import the webpage's javascript file -->
   <script src="/script.js" defer></script>
 
   <!-- font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abhaya+Libre">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
 </head>
 
 <body>
-  <div class="header">
-    <a href="index.html"><img src="/assets/name.png" id="logo" alt="Logo"></a>
-    <a href="Huang_Cindy.pdf" class="nav hover chunky-underline" target="_blank">resume</a>
-    <a href="about.html" class="nav hover chunky-underline">about</a>
-    <a href="index.html" class="nav hover chunky-underline">projects</a>
-  </div>
 
-  <h1>
-    Foodie is an app that makes finding free food on campus easy and convenient.
-  </h1>
-  <div class="projheader">
-    <div class="column">
-      <h5>Timeline</h5>
-      <div class="small">
-        April 2019 (2 weeks)
-      </div>
-    </div>
-    <div class="column">
-      <h5>
-        My Role
-      </h5>
-      <div class="small">
-        Product Designer
-      </div>
-    </div>
-    <div class="column">
-      <h5>Platform</h5>
-      <div class="small">
-        iOS App
-      </div>
-    </div>
-    <div class="column">
-      <h5>Team</h5>
-      <div class="small">
-        Cindy Huang (Design)<br>Haiying Weng (iOS)<br>Yuxuan Chen (iOS)<br>Leo Liang (Backend)
-      </div>
+  <div class="topnav">
+    <a href="index.html">
+      <h3 id="nav-name">Cindy Huang</h3>
+    </a>
+
+    <div id=links>
+
+      <a href="index.html" class="gray active">home</a>
+      <a href="index.html#projects" class="gray">work</a>
+      <a href="about.html" class="gray">me</a>
+      <a href="/assets/Huang_Cindy.pdf" class="gray">resume</a>
     </div>
   </div>
 
-  <div class="text">
-    <h6>Motivation 🍩</h6>
-    Everyone loves free food, especially college students low on meal swipes. We love giving and receiving
-    free food so much so that the students of Cornell University created a group chat in GroupMe with <strong>
-      over 4K members</strong> and <strong>dozens of messages every day</strong> solely to share about free
-    food offerings on campus.<br><br>
-    People use this group chat for mainly four reasons:
+  <div class="casestudy">
+
+    <h1>
+      Foodie is an app that makes finding free food on campus easy and convenient.
+    </h1>
+    <div class="projheader">
+      <div>
+        <h5>Timeline</h5>
+        <div>
+          <p>April 2019 (2 weeks)</p>
+        </div>
+      </div>
+      <div>
+        <h5>
+          My Role
+        </h5>
+        <div>
+          <p>Product Designer</p>
+        </div>
+      </div>
+      <div>
+        <h5>Platform</h5>
+        <div>
+          <p>iOS App</p>
+        </div>
+      </div>
+      <div>
+        <h5>Team</h5>
+        <div>
+          <p>Cindy Huang (Design)</p>
+          <p>Haiying Weng (iOS)</p>
+          <p>Yuxuan Chen (iOS)</p>
+          <p>Leo Liang (Backend)</p>
+        </div>
+      </div>
+    </div>
+
+    <h4>Motivation 🍩</h4>
+    <p>
+      Everyone loves free food, especially college students low on meal swipes. We love giving and receiving
+      free food so much so that the students of Cornell University created a group chat in GroupMe with <strong>
+        over 4K members</strong> and <strong>dozens of messages every day</strong> solely to share about free
+      food offerings on campus.</p>
+    <p>
+      People use this group chat for mainly four reasons:</p>
     <ul>
       <li>Finding when, where, and what kind of free food is being given out on campus</li>
       <li>Publicizing student organizations' events</li>
@@ -76,42 +92,55 @@
     <h2>
       The Problem 🤔
     </h2>
-    However, there are also problems with this method of communication.<br>
-    <div class="pic" style="width:33%;">
-      <img src="/assets/foodie/screenshot-1.png" alt="Screenshot of typical message content">
-      <p class="small">
-        Typical message content
-      </p>
+    <p>
+      However, there are also problems with this method of communication.</p>
+
+    <div style="display: grid; grid-template-columns: 33% 33% 33%;">
+      <div class="pic">
+        <img src="/assets/foodie/screenshot-1.png" alt="Screenshot of typical message content">
+        <p class="small">
+          Typical message content
+        </p>
+      </div>
+
+      <div class="pic">
+        <img src="/assets/foodie/screenshot-2.png" alt="Screenshot of confusion in messages">
+        <p class="small">
+          Confusion about location and time
+        </p>
+      </div>
+
+      <div class="pic">
+        <img src="/assets/foodie/screenshot-3.png" alt="Screenshot of disorganized chat">
+        <p class="small">
+          The chat is cluttered with irrelevant content (people leaving and joining)
+        </p>
+      </div>
     </div>
 
-    <div class="pic" style="width:33%;">
-      <img src="/assets/foodie/screenshot-2.png" alt="Screenshot of confusion in messages">
-      <p class="small">
-        Confusion about location and time
-      </p>
-    </div>
-
-    <div class="pic" style="width:33%;">
-      <img src="/assets/foodie/screenshot-3.png" alt="Screenshot of disorganized chat">
-      <p class="small">
-        The chat is cluttered with irrelevant content (people leaving and joining)
-      </p>
-    </div>
-    <br><br>
-    Members cannot filter the notifications from a group chat, so most members that I spoke to have the group
-    on mute and rarely check the messages. The chat also includes a lot of irrelevant activity, such as people
-    joining and leaving the group. Ultimately, the group is an overload of information that makes it hard to
-    digest.<br><br>
-    From the conversations I had with students, I learned that people won't go out of the way or plan ahead to
-    get free food, but it is a good way to save money or get some light fuel throughout the day.
+    <p>
+      Members cannot filter the notifications from a group chat, so most members that I spoke to have the group
+      on mute and rarely check the messages. The chat also includes a lot of irrelevant activity, such as people
+      joining and leaving the group. Ultimately, the group is an overload of information that makes it hard to
+      digest.
+    </p>
+    <p>
+      From the conversations I had with students, I learned that people won't go out of the way or plan ahead to
+      get free food, but it is a good way to save money or get some light fuel throughout the day.
+    </p>
     <div class="emphasis">
-      People want free food that is convenient for them, and student organizations want to attract more people
-      to their events by providing food. But, this is hard because:<br><br>
-      It's hard to find offerings nearby or on the way.<br><br>
-      The group chat is annoying and cumbersome to keep checking.
+      <p>
+        People want free food that is convenient for them, and student organizations want to attract more people
+        to their events by providing food. But, this is hard because:</p>
+      <p>
+        It's hard to find offerings nearby or on the way.</p>
+      <p>
+        The group chat is annoying and cumbersome to keep checking.</p>
     </div>
-    So, for the three-week <a target="_blank" href="https://www.cornellappdev.com/hack-challenge" class="underline">
-      CU AppDev Hack Challenge</a>, my group set out to create a way to:
+    <p>
+      So, for the three-week <a target="_blank" href="https://www.cornellappdev.com/hack-challenge" class="underline">
+        CU AppDev Hack Challenge</a>, my group set out to create a way to:
+    </p>
     <ol>
       <li>Easily find and sort through all of the convenient free food events offered</li>
       <li>Better organize how information about free food is delivered so people can quickly scan for relevant
@@ -122,30 +151,44 @@
     <h2>
       Ideation 📝
     </h2>
-    To replace the free food GroupMe, our app had to be organized and simple to understand. We brainstormed different
-    features
-    such as a map or a calendar and evaluated the use cases and problems that each idea had.<br>
+    <p>
+      To replace the free food GroupMe, our app had to be organized and simple to understand. We brainstormed
+      different
+      features
+      such as a map or a calendar and evaluated the use cases and problems that each idea had.
+    </p>
     <div class="pic">
       <img src="/assets/foodie/Ideation.png">
     </div>
 
-    At this point, I had questions about students' habits and tendencies surrounding free food events.
-    When and why do they care about free food (if at all)? What helps them decide whether to eat at
-    a free food event or use money? Do they plan to go to these events ahead of time or decide spontaneously? To find
-    out which features would be most valuable to students, I interviewed four college students. Here are the trends and
-    insights I found:
+    <p>
+      At this point, I had questions about students' habits and tendencies surrounding free food events.
+      When and why do they care about free food (if at all)? What helps them decide whether to eat at
+      a free food event or use money? Do they plan to go to these events ahead of time or decide spontaneously? To
+      find
+      out which features would be most valuable to students, I interviewed four college students. Here are the trends
+      and
+      insights I found:
+    </p>
     <ul>
-      <li><b>Free food is a spontaneous decision.</b> Students do not plan to eat free food ahead of time, and only look
+      <li><strong>Free food is a spontaneous decision.</strong> Students do not plan to eat free food ahead of time,
+        and only
+        look
         to the GroupMe if they are
         hungry in the moment, don't have other plans, and want to save money.</li>
-      <li><b>Students already know their way around campus.</b> They would like to know what events are close to them,
+      <li><strong>Students already know their way around campus.</strong> They would like to know what events are
+        close to them,
         but don't need help navigating there.</li>
-      <li><b>Students' priority when looking for free food is convenience.</b> They go to these events out of interest
+      <li><strong>Students' priority when looking for free food is convenience.</strong> They go to these events out
+        of interest
         for the event or if the food
         is close in distance, on their way, or happening at the moment when they start feeling hungry.</li>
     </ul>
-    Based on these findings, I evaluated the above features in terms of feasibility and impact on students. I chose to
-    pursue the feed format, and brainstormed more specific features and functionality to fill students' needs.<br>
+    <p>
+      Based on these findings, I evaluated the above features in terms of feasibility and impact on students. I chose
+      to
+      pursue the feed format, and brainstormed more specific features and functionality to fill students' needs.
+    </p>
 
     <div class="pic">
       <img src="/assets/foodie/feasibility.png">
@@ -154,18 +197,24 @@
       </p>
     </div>
 
-    A real-time feed of free food postings was the most feasible and valuable for students' needs. It could provide the
-    functionality of searching for
-    events by location and time and also fit with the mental model of spontaneity of the current group chat in a more
-    organized format. The calendar doesn't fit students'
-    tendency to spontaneously decide to look for free food, and the map navigation also wouldn't be as valuable since
-    students already know their way around buildings.
-    Though people care about the distance and time of events, a filter function for the feed could fill that need while
-    fitting within our engineering constraints.
-
-    <br><br>
-    Next, I mapped out the flow and hierarchy of the app and how we'd implement browsing, filtering, and posting in the
-    feed.<br>
+    <p>
+      A real-time feed of free food postings was the most feasible and valuable for students' needs. It could provide
+      the
+      functionality of searching for
+      events by location and time and also fit with the mental model of spontaneity of the current group chat in a
+      more
+      organized format. The calendar doesn't fit students'
+      tendency to spontaneously decide to look for free food, and the map navigation also wouldn't be as valuable
+      since
+      students already know their way around buildings.
+      Though people care about the distance and time of events, a filter function for the feed could fill that need
+      while
+      fitting within our engineering constraints.
+    </p>
+    <p>
+      Next, I mapped out the flow and hierarchy of the app and how we'd implement browsing, filtering, and posting in
+      the
+      feed.</p>
 
     <div class="pic">
       <img src="/assets/foodie/flow-diagram.png" style="padding-bottom:10px;" alt="Flowchart of user flow">
@@ -177,64 +226,80 @@
     <h2>
       Develop 📲
     </h2>
-    I read through many messages and food postings in the current group chat and evaluated what content was most
-    clear and informative, and what caused follow up questions and confusion. Once I had an idea of the content that is
-    absolutely essential and extra content that could be optional, but still helpful, I laid out the quick-view for the
-    main feed as well as a detailed view.<br>
+    <p>
+      I read through many messages and food postings in the current group chat and evaluated what content was most
+      clear and informative, and what caused follow up questions and confusion. Once I had an idea of the content that
+      is
+      absolutely essential and extra content that could be optional, but still helpful, I laid out the quick-view for
+      the
+      main feed as well as a detailed view.</p>
     <div class="pic">
       <img src="/assets/foodie/content-requirements.png" alt="Content requirements">
       <p class="small">
         Information displayed for each event in a consistent, easily scannable format
       </p>
     </div>
+    <p>
+      Next, I decided how to organize the main feed. To simplify and streamline the app, I knew we wanted a
+      main feed of upcoming event sorted by those happening soonest. Free food is usually a spontaneous decision,
+      rather than a planned out meal.
+      But, since students experience frustration when messages get lost or buried in the current group chat, we also
+      wanted to allow people to save an event to easily find later.
+    </p>
+    <p>
+      Besides upcoming and saved events, another distinct type of event is those created by the user.
+      A student might want to update or end the event to let people know food has run out. I explored various ways
+      to separate and organize the student's own events so that they can view, edit, or update them.
+    </p>
 
-    Next, I decided how to organize the main feed. To simplify and streamline the app, I knew we wanted a
-    main feed of upcoming event sorted by those happening soonest. Free food is usually a spontaneous decision,
-    rather than a planned out meal.
-    But, since students experience frustration when messages get lost or buried in the current group chat, we also
-    wanted to allow people to save an event to easily find later.<br><br>
-    Besides upcoming and saved events, another distinct type of event is those created by the user.
-    A student might want to update or end the event to let people know food has run out. I explored various ways
-    to separate and organize the student's own events so that they can view, edit, or update them.<br>
   </div>
-  <div class="center" style="width:85%; margin-bottom: 25px;">
-    <img src="/assets/foodie/my-events.png" style="padding-top: 25px;" alt="Explorations for my events feed">
+
+  <div class="center wide">
+    <img src="/assets/foodie/my-events.png" alt="Explorations for my events feed">
     <p class="small">
       "My Events" iterations
     </p>
   </div>
-  <div class="text">
-    I originally proposed option A and split the feed into three tabs. But, the "By Me" tab would often
-    be empty and useless for many users who do not post. It felt too heavy to have an entire tab dedicated to this.<br>
-    Option D's bottom navigation is similar to A, except I changed the "Events By Me" page into a user profile with
-    added features.
-    In an ideal world, this would provide the most functionality with the option to set a user's notification
-    preferences. However, due to our limited time for this hack challenge, I decided that C would allow for prominent
-    access to the events created by the user without an entirely separate page.<br><br>
+
+  <div class="casestudy">
+    <p>
+      I originally proposed option A and split the feed into three tabs. But, the "By Me" tab would often
+      be empty and useless for many users who do not post. It felt too heavy to have an entire tab dedicated to
+      this.
+    </p>
+    <p>
+      Option D's bottom navigation is similar to A, except I changed the "Events By Me" page into a user profile with
+      added features.
+      In an ideal world, this would provide the most functionality with the option to set a user's notification
+      preferences. However, due to our limited time for this hack challenge, I decided that C would allow for prominent
+      access to the events created by the user without an entirely separate page.
+    </p>
 
     <h2>
       Deliver 🚀
     </h2>
-    <!--<strong>Final Screens</strong><br><br>-->
+    <p>
+      Here are the final interactions handed off to developers!</p>
 
-    Here are the final interactions handed off to developers!<br><br>
   </div>
-  <div class="center" style="width:85%; margin-bottom: 25px;">
+  <div class="center wide">
     <img src="/assets/foodie/main-screens.png" alt="Final screens">
     <p class="small" style="line-height: 2em;">
       Main screens
     </p>
   </div>
 
-  <div class="center" style="width:85%; margin-bottom: 25px;">
+  <div class="center wide">
     <img src="/assets/foodie/edit-events.png" alt="Edit events flow">
     <p class="small" style="line-height: 2em;">
       Full flow of editing user's own events
     </p>
   </div>
 
-  <div class="text">
-    I also created a UI kit to establish a clear hierarchy and visual identity throughout the app. <br>
+  <div class="casestudy">
+    <p>
+      I also created a UI kit to establish a clear hierarchy and visual identity throughout the app.
+    </p>
     <div class="pic">
       <img src="/assets/foodie/ui-kit.png" alt="UI Kit">
       <p class="small">
@@ -242,8 +307,12 @@
       </p>
     </div>
 
-    <strong>We won something! 🎉</strong><br>
-    At the end of the semester, our team won Judge's Choice from the Cornell AppDev judges!<br>
+    <p>
+      <strong>We won something! 🎉</strong>
+    </p>
+    <p>
+      At the end of the semester, our team won Judge's Choice from the Cornell AppDev judges!
+    </p>
     <div class="pic">
       <img src="/assets/foodie/team.jpg" alt="Team picture">
       <p class="small">
@@ -251,28 +320,33 @@
         (mentor)
       </p>
     </div>
-    During the Hack Challenge, I treated this project as a 3-day design sprint to give the team most of the time to
-    develop.
-    You can view our github and final submission <a target="_blank" href="https://github.com/haiyingweng/Foodie"
-      class="underline">
-      here,</a> based off of my earlier designs.<br>
-    <br><br>
-    <h6>Reflection 🧐</h6>
-    This project started as a silly and fun idea thrown out during our first brainstorming session, and turned into a
-    very rewarding
-    project. It was my first time ideating and designing an app from start to finish. Though we were not able to
-    implement every feature desired (such as updating events and notifications), there were many lessons learned!
+    <p>
+      During the Hack Challenge, I treated this project as a 3-day design sprint to give the team most of the time to
+      develop.
+      You can view our github and final submission <a target="_blank" href="https://github.com/haiyingweng/Foodie"
+        class="underline">
+        here,</a> based off of my earlier designs.</p>
+
+    <h4>Reflection 🧐</h4>
+    <p>
+      This project started as a silly and fun idea thrown out during our first brainstorming session, and turned into a
+      very rewarding
+      project. It was my first time ideating and designing an app from start to finish. Though we were not able to
+      implement every feature desired (such as updating events and notifications), there were many lessons learned!
+    </p>
     <ul>
       <li><strong>📞 The importance of communication. </strong>Our team was made up of busy students getting through
         midterm
-        season, so communication was critical. Making sure we met in person and held each other accountable was the main
+        season, so communication was critical. Making sure we met in person and held each other accountable was the
+        main
         reason
         we were able to create an awesome product as beginners during a busy time period. </li>
       <li><strong>⏰ Working with constraints. </strong>The biggest constraint for this project was time. My team was
         concerned about
         finishing the project on time on top of their other responsibilities. So, my top priority was getting the
         designs ready quickly.
-        I also had to work with engineering restraints, since some of our desired features were outside of the scope of
+        I also had to work with engineering restraints, since some of our desired features were outside of the scope
+        of
         the engineers'
         knowledge as first time app developers.</li>
       <li><strong>🙋🏻‍♀️ Taking ownership. </strong>My group members spent the semester learning how to engineer an
@@ -284,20 +358,21 @@
   </div>
 
   <p style="display: inline-block; width:100%; margin-top:2em;" class="center">
-    <a href="index.html" class="chunky-underline gray hover">back to projects</a>
+    <a href="index.html" class="underline gray">back to projects</a>
   </p>
 
-  <div style="width:100%; height: 8em; display: flex;">
+  <div style="width:100%; height: 6em; display: flex;">
   </div>
 
   <!-- footer -->
+
   <p class="small gray center">
     Thanks for visiting! Say hi 👋 on
-    <a class="hover chunky-underline" target="_blank" href="https://www.linkedin.com/in/cindyhuang-/">LinkedIn</a>,
-    <a class="hover chunky-underline" target="_blank" href="https://angel.co/cindy-huang-15">AngelList</a>,
-    <a class="hover chunky-underline" target="_blank" href="mailto:ch832@cornell.edu">Email</a>, or
-    <a class="hover chunky-underline" target="_blank" href="https://twitter.com/cndyhuang">Twitter</a>.<br>
-    Made with 💖 by Cindy Huang
+    <a class="underline" target="_blank" href="https://www.linkedin.com/in/cindyhuang-/">LinkedIn</a>,
+    <a class="underline" target="_blank" href="https://angel.co/cindy-huang-15">AngelList</a>,
+    <a class="underline" target="_blank" href="mailto:ch832@cornell.edu">Email</a>, or
+    <a class="underline" target="_blank" href="https://twitter.com/cndyhuang">Twitter</a>.</p>
+  <p class="small gray center"> Made with 💖 by Cindy Huang
   </p>
 </body>
 
