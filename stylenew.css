@@ -255,6 +255,13 @@ body {
   width: 100%;
 }
 
+.btn-link {
+  text-decoration: underline;
+  font-weight: bold;
+  display: block;
+  margin: 2em 0;
+}
+
 /* about */
 #bio{
   width: 55%;
