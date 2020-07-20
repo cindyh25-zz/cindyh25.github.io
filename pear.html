@@ -8,7 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="icon" href="/assets/favicon.png" type="image/png">
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <!-- import the webpage's stylesheet -->
   <link rel="stylesheet" href="/stylenew.css">
 
@@ -19,6 +20,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abhaya+Libre">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+
+  <!-- bootstrap -->
+
+
 </head>
 
 <body>
@@ -37,19 +42,22 @@
     </div>
   </div>
 
-  <div class="casestudy">
+  <!-- <div class="casestudy-container"> -->
+  <div class="container-md casestudy-container">
+    <div class="row">
+      <h1>
+        Pear is a platform for students to meet new people and form meaningful connections.
+      </h1>
+    </div>
 
-    <h1>
-      Pear is an app that fosters meaningful connections between students by encouraging meetups.
-    </h1>
-    <div class="projheader">
-      <div>
+    <div class="row overview">
+      <div class="col-3">
         <h5>Timeline</h5>
         <div>
           <p>January 2020 - Present</p>
         </div>
       </div>
-      <div>
+      <div class="col-3">
         <h5>
           My Role
         </h5>
@@ -59,24 +67,24 @@
           <p>User Researcher</p>
         </div>
       </div>
-      <div>
+      <div class="col-3">
         <h5>Platform</h5>
         <div>
           <p>iOS App</p>
           <p>Android App</p>
         </div>
       </div>
-      <div>
+      <div class="col-3">
         <h5>Team</h5>
         <div>
-          <a href="https://www.cornellappdev.com/team/members">
+          <a href="https://www.cornellappdev.com/team/">
             <p>Cornell AppDev</p>
           </a>
         </div>
       </div>
     </div>
 
-    <h4>Pear is coming soon in Fall 2020. Here is a sneak peek!</h4>
+    <!-- <h4>Pear is coming soon in Fall 2020. Here is a sneak peek!</h4>
 
     <div class="pic">
       <img src="assets/pear/pear sneak peek.png">
@@ -89,11 +97,267 @@
   </p>
 
   <div style="width:100%; height: 6em; display: flex;">
+  </div> -->
+
+
+    <div class="row new-section"></div>
+    <div class="col-8">
+      <h2 class="">What is Pear?</h2>
+      <p><strong>Automatic pairings:</strong> Putting yourself out there is hard. A virtual, one-on-one introduction
+        every week invites students to get to know each other better.</p>
+      <p><strong>Matching based on similarities:</strong> With common ground, people are more likely to follow
+        through with pairings have a positive experience during the meet-up.</p>
+      <p><strong>More friends, less “clout”:</strong> There is enough peer pressure and resources around
+        professional development already. We hope to challenge this and create a comfortable space focused on making
+        new friends.</p>
+    </div>
+    <div class="row new-section">
+      <div class="col-4">
+        <h5>Personalized with students’ interests and campus groups</h5>
+        <img class="img-fluid" src="assets/pear/onboarding.gif" />
+      </div>
+      <div class="col-4">
+        <h5>Weekly pairings as opportunities to reach out</h5>
+        <img class="img-fluid" src="assets/pear/reachout.gif" />
+      </div>
+      <div class="col-4">
+        <h5>Scheduling the meetup and making it happen</h5>
+        <img class="img-fluid" src="assets/pear/respond.gif" />
+      </div>
+    </div>
+
+    <div class="row new-section">
+      <div class="col-12">
+        <h2>Why do we need Pear?</h2>
+        <p>Too often at Cornell, we pass by other students we vaguely know, drift apart from people, or even don’t
+          know the names of others in the same student club. Within our project team we’ve found that 30 minute chats
+          can help people learn about each other, improve culture, and sometimes lead to life-long friendships. </p>
+        <p>After a few semesters of coffee-chatting each other we saw an opportunity to for everyone at Cornell to
+          break awkward barriers and improve campus culture.</p>
+        <p><strong>But what do other students think?</strong></p>
+        <p>We interviewed and surveyed other Cornell undergraduates about how they feel about their community and
+          relationships with other students. Here are highlights of what we learned:</p>
+      </div>
+      <div class="row center-row">
+        <div class="col-3"><img class="img-fluid" src="assets/pear/userresearch-1.png" /></div>
+        <div class="col-9">
+          <p>Many people have close friends but also many other acquaintances that they wish they knew better.</p>
+        </div>
+      </div>
+      <div class="row center-row">
+        <div class="col-3"><img class="img-fluid" src="assets/pear/userresearch-2.png" /></div>
+        <div class="col-9">
+          <p>Everyone is open to chatting, but don’t want to reach out due to laziness or fear of inconveniencing
+            others.</p>
+        </div>
+      </div>
+      <div class="row center-row">
+        <div class="col-3"><img class="img-fluid" src="assets/pear/userresearch-3.png" /></div>
+        <div class="col-9">
+          <p>Students don’t know where to go to meet more new people with similar interests.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row new-section">
+      <div class="col">
+        <h2>The Problem</h2>
+        <p class="pear-problem">
+          Cornell students want to form meaningful connections with other students who share interests and hobbies.
+          But this is difficult because:
+        </p>
+        <ul class="pear-problem">
+          <li>They do not know how to initiate the interaction.</li>
+          <li>They are not used to branching out beyond their current circle.</li>
+        </ul>
+        <p class="new-section">Listening to how other students struggled to deepen their friendships or find the time
+          and energy to meet
+          new people helped us narrow down the goals for our product:</p>
+        <ol>
+          <li>Connect people with common interests and groups</li>
+          <li>Minimize the friction of reaching out and scheduling meetups</li>
+        </ol>
+
+      </div>
+    </div>
+
+    <div class="row new-section">
+      <div class="col">
+        <h2>Where to start</h2>
+        <p>After discussing with our team of superstar designers, engineers, and strategists we decided on some
+          constraints and product direction.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h5>Constraints</h5>
+        <ul>
+          <li>MVP in one semester</li>
+          <li>No instant messaging feature</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h5>
+          Product requirements
+        </h5>
+        <ol>
+          <li>Personalization</li>
+          <li>Matches</li>
+          <li>Scheduling</li>
+        </ol>
+      </div>
+    </div>
+    <div class="row">
+      <img class="img-fluid" src="assets/pear/userflows.png" />
+    </div>
+
+    <div class="row new-section">
+      <div class="col">
+        <h2>Personalization</h2>
+        <p>First, we need some information about the students to pair them up with others who have common ground to
+          talk about. This content also helps students learn a bit about each other before meeting up. We based the
+          onboarding flow on how students feel more excited and comfortable meeting new people with similar
+          background, interests, or campus groups. We also want to give people a way to connect or communicate outside
+          of the app, since messaging is outside of our constraints.</p>
+        <img class="img-fluid" src="assets/pear/personalization.png" />
+      </div>
+    </div>
+
+
+    <h2 class=" new-section">A New Pear Every Week</h2>
+    <div class="row">
+      <div class="col-6">
+        <img class="img-fluid" src="assets/pear/pairings_sketch.png" />
+      </div>
+      <div class="col-6">
+        <p>This cycle of intros solves three problems students experience:</p>
+        <ul>
+          <li>Not knowing many people who share specific interests</li>
+          <li>Struggling to craft intro messages asking to meet with someone they don’t know</li>
+          <li>Feeling unsure if the other person has mutual desire to meet</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h3>Explorations</h3>
+        <img class="img-fluid" src="assets/pear/match-explorations.png" />
+        <p>Ultimately, we decided to highlight similarities with a clear destinction and label and give thorough
+          information on the other person’s background and appearance build trust before deciding to meet up.</p>
+      </div>
+    </div>
+
+    <div class="row new-section">
+      <div class="col">
+        <h2>
+          Scheduling
+        </h2>
+        <p>Students have the most frustration with deciding when and where to meet in our busy schedules. Many
+          complained about having to communicate back and forth, or even not getting a response at all.</p>
+        <p>Minimizing the friction for scheduling will reduce the barrier for meet-ups. That way, users can focus more
+          on building relationships rather than scheduling.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-4">
+        <h5>Initial Approach</h5>
+        <p>We thought that due to everyone’s busy schedules, students would want to change their availability each
+          week. </p>
+      </div>
+      <div class="col-8">
+        <img class="img-fluid" src="assets/pear/scheduling-initial.png" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-4">
+        <h5>Revised Approach</h5>
+        <p>However, we realized that students still have typical routines that would be tedious to repeatedly enter.
+          Our revised approach lets them input this once and pre-fill it when reaching out.</p>
+      </div>
+      <div class="col-8">
+        <img class="img-fluid" src="assets/pear/scheduling-revised.png" />
+      </div>
+    </div>
+
+    <div class="row new-section">
+      <div class="col">
+        <h3>Early Explorations</h3>
+        <img class="img-fluid" src="assets/pear/scheduling iterations.png" />
+      </div>
+    </div>
+    <div class="row new-section">
+      <div class="col">
+        <h3>Final Designs</h3>
+        <img class="img-fluid" src="assets/pear/scheduling-final.png" />
+      </div>
+    </div>
+
+    <div class="row new-section">
+      <div class="col">
+        <h2>What's up with this fruit?</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-6">
+        <p>Our pear friend gives updates and reminders about pairings and scheduled meetups. It’s also the friendly
+          voice that adds a personal and human feel to the app.</p>
+      </div>
+      <div class="col-6">
+        <h5>Early Explorations</h5>
+        <img class="img-fluid" src="assets/pear/pear-explorations.png" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h3>Examples: Pear in action</h3>
+        <img class="img-fluid" src="assets/pear/pear-examples.png" />
+      </div>
+    </div>
+
+    <div class="row new-section">
+      <div class="col">
+        <h2>Looking Forward</h2>
+        <p>Unfortunately, COVID-19 abruptly interrupted our team’s in-person workflow and Pear will be released in
+          Fall 2020. However, we were still able to conduct remote user testing with our prototype. We
+          gained valuable feedback on how to improve including revisiting content strategy, creating a space for
+          instant messaging, and a community feed.</p>
+        <p>
+          The pandemic also may change people’s attitudes towards in-person meetings with strangers 😢. As it unfolds,
+          the team will keep this in mind in shaping our product. However, we are optimistic that there will always be
+          a need to feel connected with the community, whether that will be at a campus cafe, over video calls, or
+          some other solution. </p>
+      </div>
+    </div>
+
+    <div class="row new-section">
+      <div class="col">
+        <h2>What I learned</h2>
+        <p><strong>Tight knit collaboration.</strong> Thanks to constant and thoughtful feedback from other
+          designers and our developers, I learned to not only respond at lightning speed to Slack messages, but also
+          appreciate different perspectives and improve my design work as a result.</p>
+        <p><strong>Designing on a mission.</strong> I truly loved spending so much time thinking about ways to improve
+          the Cornell community. I learned that wholeheatedly believing in the mission of a product fuels my
+          productivity and creativity.</p>
+        <p><strong>Scrap that!</strong> We made countless mistakes and iterations that will never see the light. But
+          pushing through those challenged us to think of other edge cases and possibilities and ultimately create a
+          better app. I can’t wait to see where it goes 🚀</p>
+        <p><strong>Bonus: Using the pen tool.</strong> I loved exploring illustration and branding as well! Here’s
+          some of the visuals up close.</p>
+        <img class="img-fluid new-section" src="assets/pear/illustrations.png" />
+      </div>
+    </div>
+
+    <!-- end of container -->
+
   </div>
+
 
   <!-- footer -->
 
-  <p class="small gray center">
+  <p class="small gray center footer">
     Thanks for visiting! Say hi 👋 on
     <a class="underline" target="_blank" href="https://www.linkedin.com/in/cindyhuang-/">LinkedIn</a>,
     <a class="underline" target="_blank" href="https://angel.co/cindy-huang-15">AngelList</a>,
