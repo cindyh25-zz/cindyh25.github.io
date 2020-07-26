@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="/stylenew.css">
   <!-- favicon -->
   <link rel="icon" href="/assets/favicon.png" type="image/png">
@@ -16,6 +18,7 @@
   <!-- font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abhaya+Libre">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Franklin">
 
 </head>
 
@@ -29,74 +32,89 @@
   </div>
 </div>
 
-<div class="column" id="intro">
-  <div id="name">
-    <h1>Cindy Huang</h1>
-  </div>
-  <div id="blurb">
-    <p>Student at Cornell who likes to design, code, make art, and learn.</p>
-  </div>
-  <div id="social-links">
+<div class="container-md" id="home">
+  <div class="row">
+    <div class="col-md-6">
+      <div id="name">
+        <h1>Cindy Huang</h1>
+      </div>
+      <div id="blurb">
+        <p>Student at Cornell learning about creating intentionally with design, code, and art.</p>
+      </div>
+      <div id="social-links">
+        <a href="mailto:ch832@cornell.edu">
+          <img src="assets/icons/mail.svg" /></a>
+        <a href="https://github.com/cindyh25">
+          <img src="assets/icons/github.svg" /></a>
+        <a href="https://www.linkedin.com/in/cindyhuang-/">
+          <img src="assets/icons/linkedin.svg" /></a>
+        <a href="https://twitter.com/cndyhuang">
+          <img src="assets/icons/twitter.svg" />
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="section">
+        <div class="shape" id="circle1"></div>
+        <h3>in the works⁠—</h3>
+        <p>
+          <span>building an accessible academia platform</span>
+          <span class="gray"> at <a href="https://polici.org/" class="gray underline" target="_blank">Polici</a></span>
+        </p>
+        <p>
+          <span>designing apps to foster community and culture</span>
+          <span class="gray"> with <a href="https://www.cornellappdev.com/" class="gray underline"
+              target="_blank">Cornell
+              AppDev</a></span>
+        </p>
+
+        <p>
+          <span>teaching design education</span>
+          <span class="gray"> through <a href="https://www.notion.so/SP20-02233698eb944553bc215d4be2ae49b4"
+              class="gray underline" target="_blank">Intro to Digital Product Design</a></span>
+        </p>
+      </div>
+
+      <div class="section">
+        <div class="shape" id="circle2"></div>
+        <h3>currently learning⁠—</h3>
+        <p>
+          android development
+        </p>
+        <p>
+          react.js
+        </p>
+        <p>
+          animation and motion design
+        </p>
+      </div>
+
+      <div class="section">
+        <div class="shape" id="circle3"></div>
+        <h3>previously⁠—</h3>
+        <p>
+          <a href="#projects" class="black underline">↓ check out my past work ↓</a>
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="column">
-  <div class="section">
-    <div class="shape" id="circle1"></div>
-    <h2>in the works⁠—</h2>
-    <p>
-      <span>building an accessible academia platform</span>
-      <span class="gray"> at <a href="https://polici.org/" class="gray underline" target="_blank">Polici</a></span>
-    </p>
-    <p>
-      <span>designing apps to build community and culture</span>
-      <span class="gray"> with <a href="https://www.cornellappdev.com/" class="gray underline" target="_blank">Cornell
-          AppDev</a></span>
-    </p>
-
-    <p>
-      <span>teaching design education</span>
-      <span class="gray"> through <a href="https://www.notion.so/SP20-02233698eb944553bc215d4be2ae49b4"
-          class="gray underline" target="_blank">Intro to Digital Product Design</a></span>
-    </p>
-  </div>
-
-  <div class="section">
-    <div class="shape" id="circle2"></div>
-    <h2>currently learning⁠—</h2>
-    <p>
-      android development
-    </p>
-    <p>
-      react.js
-    </p>
-    <p>
-      animation and motion design
-    </p>
-  </div>
-
-  <div class="section">
-    <div class="shape" id="circle3"></div>
-    <h2>previously⁠—</h2>
-    <p>
-      <a href="#projects" class="black underline">↓ check out my past work ↓</a>
-    </p>
-  </div>
-</div>
 
 <div class="divider"></div>
 
 <div id="projects">
 
-  <h3>design</h3>
+  <h2>projects</h2>
   <div class="two-columns">
-    <a href="pear.html">
+    <a class="no-hover" href="pear.html">
       <div class="project">
         <div class="mock">
           <img src="assets/new mockups/Pear mock.png">
         </div>
         <div class="info">
-          <h4>Pear (coming soon)</h4>
+          <h4>Pear</h4>
           <p class="gray">product design, illustration</p>
           <p>forming community and new friends</p>
         </div>
@@ -114,7 +132,8 @@
       </div>
     </a> -->
 
-    <a href="https://medium.com/@cindy.huang/spotify-case-study-discovering-music-through-friend-recommendations-ee21df5c24aa?source=friends_link&sk=12312d94d6c85600ef79f04d6b319ac3"
+    <a class="no-hover"
+      href="https://medium.com/@cindy.huang/spotify-case-study-discovering-music-through-friend-recommendations-ee21df5c24aa?source=friends_link&sk=12312d94d6c85600ef79f04d6b319ac3"
       target="_blank">
       <div class="project">
         <div class="mock"><img src="assets/new mockups/Spotify mock.png"></div>
@@ -126,7 +145,17 @@
       </div>
     </a>
 
-    <a href="pollo.html">
+    <a class="no-hover" href="night-bite.html">
+      <div class="project">
+        <div class="mock"><img src="assets/night-bite/night-bite-mock-v2.png"></div>
+        <div class="info">
+          <h4>Night Bite</h4>
+          <p class="gray">game design lead</p>
+        </div>
+      </div>
+    </a>
+
+    <a class="no-hover" href="pollo.html">
       <div class="project">
         <div class="mock"><img src="assets/new mockups/Pollo mock.png"></div>
         <div class="info">
@@ -137,22 +166,13 @@
       </div>
     </a>
 
-    <a href="night-bite.html">
-      <div class="project">
-        <div class="mock"><img src="assets/night-bite/night-bite-mock-v2.png"></div>
-        <div class="info">
-          <h4>Night Bite</h4>
-          <p class="gray">game design lead</p>
-        </div>
-      </div>
-    </a>
 
   </div>
 </div>
 
 <div class="divider"></div>
 
-<div id="community">
+<!-- <div id="community">
   <h3>community</h3>
 
   <a href="https://wicc.cornell.edu/" target="_blank">
@@ -190,7 +210,7 @@
   </a>
 
 
-</div>
+</div> -->
 
 <div style="width:100%; height: 6em; display: flex;">
 </div>

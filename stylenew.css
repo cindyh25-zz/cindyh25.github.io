@@ -1,15 +1,18 @@
 html{
   scroll-behavior:smooth;
 }
+
+p, span, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Libre Franklin', "Inter", "Helvetica", sans-serif
+}
+
 /* text styles */
 h1{
- font-family: "Abhaya Libre", "Unna", serif;
  font-weight: bold;
  font-size: 3em;
 }
 
 h2{
-  font-family: "Abhaya Libre", "Unna", serif;
   font-weight: bold;
   font-size: 2rem;
   margin: 1.25em 0 0.5em 0
@@ -19,7 +22,6 @@ h2{
  }
 
  h3{
-  font-family: "Abhaya Libre", "Unna", serif;
   font-weight: bold;
   font-size: 1.5em;
  }
@@ -28,8 +30,7 @@ h2{
  }
 
  h4{
-  font-family: "Abhaya Libre", "Unna", serif;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 1.25em;
   margin: 0.5em 0;
  }
@@ -46,7 +47,7 @@ p{
 
 #blurb p {
   font-size: 2em;
-  margin-right:20%;
+  width: 80%;
 }
 
 .project p {
@@ -67,7 +68,7 @@ li {
 }
 
 body {
-  font-family: "Inter", "Helvetica Neue", sans-serif;
+  font-family: "Libre Franklin", "Helvetica Neue", sans-serif;
   margin: 0 15% 4em 15%;
 }
 .footer {
@@ -108,6 +109,9 @@ body {
 }
 
 /* home page */
+#home{
+  margin: 3em auto;
+}
 .topnav a:hover{
   color:black;
 }
@@ -115,7 +119,10 @@ body {
   display: inline-block;
   width:45%;
 }
-
+.no-hover:hover{
+  text-decoration: none;
+  color: initial;
+}
 .project {
   padding: 3em;
   transition: 0.3s ease-in-out;
@@ -124,6 +131,7 @@ body {
   box-shadow: 0 0 8px #d4d4d4;
   transform: translateY(-8px);
   transition: 0.3s ease-in-out;
+  text-decoration: none;
 }
 .mock{
   width: 60%;
@@ -145,8 +153,9 @@ body {
 
 /* spacing */
 .section{
-  margin: 0.5em 0;
+  margin: 1.5em 0;
 }
+
 
 .grid{
   display: grid;
@@ -206,6 +215,12 @@ body {
   transform: translate(-20px,-8px);
   border-radius: 59% 48% 42% 54% / 60% 59% 35% 46%;
 }
+#social-links {
+  display:flex;
+}
+#social-links img {
+  margin-right: 0.75em
+}
 
 /* case study */
 
@@ -213,7 +228,10 @@ body {
   margin: 1rem 0;
 }
 .new-section {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
+}
+.subsection {
+  margin-top: 1.5em
 }
 
 
@@ -252,7 +270,9 @@ body {
   padding:30px;
   line-height: 1.5em;
 }
-
+.img-fluid {
+  margin: 1em 0;
+}
 .pic{
   text-align:center;
   margin: 3em 0;
@@ -301,10 +321,17 @@ body {
   width: 60%;
   margin: 2rem auto;
 }
-.pear-problem {
-  color: #176027;
+.people-problem {
   font-size: 1.25rem;
-  font-weight: 550;
+  font-weight: 600;
+}
+.green {
+    color: #176027;
+
+}
+.caption{
+  text-align: center;
+  margin-bottom: 3em;
 }
 
 @media only screen and (max-width:850px){

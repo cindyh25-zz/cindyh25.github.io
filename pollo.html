@@ -10,6 +10,8 @@
   <link rel="icon" href="/assets/favicon.png" type="image/png">
 
   <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="/stylenew.css">
 
   <!-- import the webpage's javascript file -->
@@ -19,6 +21,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abhaya+Libre">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Franklin">
+
 </head>
 
 <body>
@@ -36,8 +40,50 @@
       <a href="/assets/Huang_Cindy.pdf" class="gray">resume</a>
     </div>
   </div>
+  <div class="container-md casestudy-container">
+    <div class="row">
+      <h1>
+        Pollo is an app that that allows for real-time polling, feedback, and interaction between teachers and students.
+      </h1>
+    </div>
 
-  <div class="casestudy">
+    <div class="row overview">
+      <div class="col-3">
+        <h5>Timeline</h5>
+        <div>
+          <p>Fall 2019 - December 2019</p>
+        </div>
+      </div>
+      <div class="col-3">
+        <h5>
+          My Role
+        </h5>
+        <div>
+          <p>Design systems</p>
+          <p>Interaction design</p>
+          <p>Prototyping</p>
+        </div>
+      </div>
+      <div class="col-3">
+        <h5>Platform</h5>
+        <div>
+          <p>iOS App</p>
+          <p>Android App</p>
+          <p>Web App</p>
+        </div>
+      </div>
+      <div class="col-3">
+        <h5>Team</h5>
+        <div>
+          <p><a href="https://www.cornellappdev.com/" class="underline" target="_blank">Cornell AppDev</a></p>
+          <p>Designers: Cindy Huang, Amanda Yang</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- <div class="casestudy">
     <h1>
       Pollo is an app that that allows for real-time polling, feedback, and interaction between teachers and students.
     </h1>
@@ -74,10 +120,10 @@
           <p>Designers: Cindy Huang, Amanda Yang</p>
         </div>
       </div>
-    </div>
+    </div> -->
 
 
-    <h4>Motivation ❔</h4>
+    <h4 class="new-section">Motivation ❔</h4>
     <p>
       At Cornell, many professors utilize polling software such as iClickers or Learning Catalytics in class.
       They use this often in large lectures where <strong>it is hard to interact with everyone in the class</strong>.
@@ -136,7 +182,7 @@
     </p>
 
 
-    <h2 id="multiple-choice">
+    <h2 id="multiple-choice" class="new-section">
       <span class="gray">01</span> Multiple choice Q&A interaction
     </h2>
     <p>
@@ -157,7 +203,7 @@
       question:</p>
 
     <div class="pic">
-      <img src="assets/pollo/mc-old.png">
+      <img class="img-fluid" src="assets/pollo/mc-old.png">
     </div>
 
     <p>
@@ -174,7 +220,7 @@
       So, we explored different ways to show correctness and the student’s selection below.</p>
 
     <div class="pic">
-      <img src="assets/pollo/mc-iterations.png">
+      <img class="img-fluid" src="assets/pollo/mc-iterations.png">
     </div>
 
     <p>
@@ -187,7 +233,7 @@
       bar graphs for results. </p>
 
     <div class="pic">
-      <img src="assets/pollo/mc-percent-iterations.png">
+      <img class="img-fluid" src="assets/pollo/mc-percent-iterations.png">
     </div>
 
     <p>
@@ -201,10 +247,10 @@
       Here is the updated, full flow for answering a multiple choice question!</p>
 
     <div class="pic">
-      <img src=" assets/pollo/mc-final-flow.png" class="center">
+      <img class="img-fluid" src=" assets/pollo/mc-final-flow.png" class="center">
     </div>
 
-    <h2 id="entry-points">
+    <h2 id="entry-points" class="new-section">
       <span class="gray">02</span> Entry points for creating and joining a class
     </h2>
     <p>
@@ -214,7 +260,7 @@
     </p>
 
     <div class="pic">
-      <img src="assets/pollo/cta-old.png">
+      <img class="img-fluid" src="assets/pollo/cta-old.png">
     </div>
 
     <p>
@@ -238,7 +284,7 @@
     </p>
 
     <div class="pic">
-      <img src="assets/pollo/cta-explorations.png">
+      <img class="img-fluid" src="assets/pollo/cta-explorations.png">
     </div>
 
     <p>
@@ -252,12 +298,12 @@
       Here is the final interaction for toggling between student and professors’ use cases:</p>
 
 
-    <img src="assets/pollo/entry-point-final.gif" style="width: 30%; margin: 48px auto">
+    <img class="img-fluid" src="assets/pollo/entry-point-final.gif" style="width: 30%; margin: 48px auto">
 
 
     <!-- ================== ONBOARDING ==================== -->
 
-    <h2 id="onboarding">
+    <h2 id="onboarding" class="new-section">
       <span class="gray">03</span> Onboarding 🚢
     </h2>
     <p>
@@ -286,7 +332,7 @@
       Here is the final prototype.
     </h4>
 
-    <img src="assets/pollo/onboarding.gif" style="width:30%; margin: 48px auto">
+    <img class="img-fluid" src="assets/pollo/onboarding.gif" style="width:30%; margin: 48px auto">
 
 
     <h4>
@@ -299,7 +345,7 @@
     </p>
 
     <div class="pic">
-      <img src="assets/pollo/onboarding-flows.png" alt="Possible onboarding flows">
+      <img class="img-fluid" src="assets/pollo/onboarding-flows.png" alt="Possible onboarding flows">
     </div>
 
     <p>
@@ -323,7 +369,7 @@
       onboarding instructions. I used a dark overlay and white outlines and text to emphasize components and provide
       context.
     </p>
-    <img src="assets/pollo/onboarding-visual.png" alt="Onboarding visual design">
+    <img class="img-fluid" src="assets/pollo/onboarding-visual.png" alt="Onboarding visual design">
     <p>
       Option A is more dynamic which brings people's attention to the buttons highlighted. But, the copy is less
       concise
@@ -340,13 +386,13 @@
     </p>
 
 
+
     <p>
       <span class="gray">P.S. Special shoutout to my wonderful co-designer and mentor <a
           href="https://www.amandamyang.com/" class="underline" target="_blank">Amanda
           Yang</a> and the rest of AppDev for teaching me so much!</span>
     </p>
   </div>
-
   <p style="display: inline-block; width:100%; margin-top:2em;" class="center">
     <a href="index.html" class="underline gray ">back to projects</a>
   </p>
