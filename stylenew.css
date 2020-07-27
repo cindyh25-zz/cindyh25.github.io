@@ -140,6 +140,21 @@ body {
 .mock img{
   width: 100%;
 }
+#pear-mock {
+  padding: 2.5%, 0;
+}
+#polici-mock {
+  width: 100%;
+  padding: 15.5% 0;
+}
+#nightbite-mock {
+  width: 65%;
+}
+#flick-project:hover {
+  box-shadow: none;
+  transform: none;
+  text-decoration: none;
+}
 .community-logo img{
   width: 100%;
 }
@@ -359,9 +374,7 @@ body {
   width: 40%;
   display: inline-block;
 }
-.project{
-  padding: 1em;
-}
+
 
   .community-logo {
     width: 20%;
