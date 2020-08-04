@@ -69,7 +69,7 @@ li {
 
 body {
   font-family: "Libre Franklin", "Helvetica Neue", sans-serif;
-  margin: 0 15% 4em 15%;
+  margin: 0 10% 4em 10%;
 }
 .footer {
   margin-top: 10em
@@ -243,10 +243,10 @@ body {
   margin: 1rem 0;
 }
 .new-section {
-  margin-top: 2.5rem;
+  margin-top: 4rem;
 }
 .subsection {
-  margin-top: 1.5em
+  margin-top: 2rem
 }
 
 
@@ -255,14 +255,20 @@ body {
   font-size: 0.75em;
 }
 .casestudy-container{ 
-  width: 85%;
-  margin: 4em auto;
+  width: 70%;
+  /* margin: 4em auto; */
 }
-
+.top-section {
+  margin-top: 4em
+}
+.bottom-section {
+  margin-bottom: 4em;
+}
 .casestudy{ 
   width: 85%;
   margin: 4em auto;
 }
+
 .casestudy h4{
   margin-top: 2em;
   font-weight: bold;
@@ -309,6 +315,7 @@ body {
   font-weight: bold;
   display: block;
   margin: 2em 0;
+  color: inherit;
 }
 
 /* about */
