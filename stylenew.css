@@ -381,6 +381,10 @@ body {
   width: 40%;
   display: inline-block;
 }
+.center-row {
+  width: 100%;
+  margin: 2rem auto;
+}
 
 
   .community-logo {
@@ -402,6 +406,7 @@ body {
     width: 90%;
     display: block;
   }
+  
   .mock {
     display: block;
   }
