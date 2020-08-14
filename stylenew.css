@@ -70,6 +70,7 @@ li {
 body {
   font-family: "Libre Franklin", "Helvetica Neue", sans-serif;
   margin: 0 10% 4em 10%;
+  overflow-x: hidden;
 }
 .footer {
   margin-top: 10em
@@ -359,6 +360,46 @@ body {
   display: none
 }
 
+img#pear-meetup {
+  width: 20%;
+  transform: translateY(-100%);
+  right:-10px;
+  float: right;
+  position: absolute;
+}
+
+.proj-footer {
+  border-top: 1px solid black;
+  padding: 2em 0;
+  margin: 4em 0 2em 0;
+  width: 100%;
+}
+
+a.footer-right {
+  text-align: right;
+  float: right;
+  width: 30%;
+}
+a.footer-right:after{
+  content: " →"
+}
+a.footer-left:before{
+  content: "← "
+}
+a.footer-left {
+  text-align: left;
+  float: left;
+  width: 30%;
+}
+p.footer-center {
+  text-align: center;
+  margin-top: 3em;
+}
+.proj-footer a:hover{
+  color: initial;
+}
+
+
 @media only screen and (max-width:850px){
   .column{
     width: 100%;
@@ -447,4 +488,10 @@ body {
   .project-title{
     font-size: 2em;
   }
+  img#pear-meetup {
+    width: 100%;
+    padding: 5%;
+    position: static;
+    transform: none;
+}
 }
