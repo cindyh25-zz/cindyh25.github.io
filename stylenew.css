@@ -399,6 +399,32 @@ p.footer-center {
   color: initial;
 }
 
+.floating-button-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+  color: #71748C;
+  display: flex;
+  flex-direction: column;
+
+}
+.floating-button {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 8px;
+  transition: 0.2s ease;
+  border-radius: 50px;
+  background-color: white;
+  margin: 4px;
+}
+.floating-button:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  transition: 0.2s ease;
+  transform: translateY(-4px);
+}
+
 
 @media only screen and (max-width:850px){
   .column{

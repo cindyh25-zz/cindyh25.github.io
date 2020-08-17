@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
-  <title>cindy huang</title>
+  <title>Night Bite -- Cindy Huang</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Night Bite is a desktop action strategy game.">
 
   <link rel="icon" href="/assets/favicon.png" type="image/png">
 
@@ -27,7 +28,7 @@
 
 <body>
 
-  <div class="topnav">
+  <div class="topnav" id="top">
     <a href="index.html">
       <h3 id="nav-name">Cindy Huang</h3>
     </a>
@@ -37,8 +38,17 @@
       <a href="index.html" class="gray">home</a>
       <a href="index.html#projects" class="active">work</a>
       <a href="about.html" class="gray">about</a>
-      <a href="/assets/Huang_Cindy.pdf" class="gray">resume</a>
+      <a href="Huang_Cindy.pdf" class="gray">resume</a>
     </div>
+  </div>
+
+  <div class="floating-button-container">
+    <a href="#top">
+      <img class="floating-button" src="assets/icons/up arrow.png" />
+    </a>
+    <a href="#bottom">
+      <img class="floating-button" src="assets/icons/down arrow.png" />
+    </a>
   </div>
 
   <div class="container-md casestudy-container">
@@ -123,7 +133,7 @@
       <p class="small">Environment background tiles and color schemes</p>
     </div>
 
-    <div class="pic">
+    <div class="pic" id="bottom">
       <img class="img-fluid" src="assets/night-bite/leveldesigns.png" alt="Level designs">
       <p class="small">4 out of 15 Level designs</p>
     </div>
